@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "578982523878",
+    "firebase_url": "https://rnframework.firebaseio.com",
+    "project_id": "rnframework",
+    "storage_bucket": "rnframework.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578982523878:android:ee82ef753559d441",
+        "android_client_info": {
+          "package_name": "com.web_react_native_webpack_babel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578982523878-b0l33psm63piaslglls3i6u0apbe1j3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDua_6UEJoQKu4IGveFgxoJyQq-CSa4mLI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
