@@ -11,7 +11,7 @@ The app has almost all major implementation which are required to start a projec
 
 
 Technologies Used
-- Client Side 
+
 - React
 - React Native
 - Redux
