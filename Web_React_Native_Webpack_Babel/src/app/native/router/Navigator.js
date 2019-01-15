@@ -8,7 +8,7 @@ import { createStackNavigator } from 'react-navigation';
 import SplashScreen from '../containers/Splash'
 import Dashbaord from '../containers/dashboard/Dashboard';
 // import LoginScreen from '../containers/AuthScreen/index'
-import Boiler from "../containers/LoginRegister/Boiler";
+
 import ForgetPassword from "../containers/LoginRegister/ForgetPassword";
 import Register from "../containers/LoginRegister/Register";
 import LoginHome from "../containers/LoginRegister/index"
@@ -41,12 +41,6 @@ const AppNavigator = createStackNavigator({
     screen: ForgetPassword,
     navigationOptions: {
       title: "ForgetPassword"
-    }
-  },
-  Boiler: {
-    screen: Boiler,
-    navigationOptions: {
-      title: "Boiler"
     }
   },
   Dashboard: {

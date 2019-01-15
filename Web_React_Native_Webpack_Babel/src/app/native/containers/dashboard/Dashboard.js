@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 /********************************************************/
 
-import { toggleColor } from '../../../actions/actions';
+
 
 class Dashboard extends Component {
 
@@ -39,16 +39,8 @@ class Dashboard extends Component {
     console.log("Inside component");
     console.log(this.props);
     return (
-
-
       <View style={appStyle.reactNativeWeb}>
-
-        <HelloWorld
-          onPress={() => {
-            this.props.toggle();
-          }}
-          color={color}
-        />
+      
       </View>
 
     );

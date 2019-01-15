@@ -77,10 +77,7 @@ class Register extends Component {
     this.setState({
       loading: true
     });
-    // await AsyncStorage.setItem("email", email);
-    // await AsyncStorage.setItem("name", name);
-    // await AsyncStorage.setItem("password", password);
-    // this.props.navigation.navigate("Boiler");
+    
     this.props.LoginActions.doSignup(dataToUpdate);
   }
 
