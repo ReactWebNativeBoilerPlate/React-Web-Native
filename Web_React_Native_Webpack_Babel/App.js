@@ -11,12 +11,15 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import Root from './src/app/native/containers/Root';
 import configureStore from './src/app/store/configureStore.prod.js';
+import {strings} from './LStrings';
 
 const store = configureStore();
 
 export default class App extends Component {
   render() {
-    return (<Root store={store} />
+
+  console.log(`strings = ${strings}`);
+    return (<Root store={store}/>
     );
   }
 }
