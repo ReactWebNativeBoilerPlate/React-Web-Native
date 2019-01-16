@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Loader from "../../components/loader";
+import { DocumentPicker, DocumentPickerUtil } from 'react-native-document-picker';
 
 import {
 
@@ -33,10 +34,9 @@ class Login extends Component {
       password: "",
       message: "",
       success: false,
-      loading: false
+      loading: false,
     };
   }
-
 
   componentWillReceiveProps(nextProps) {
 
@@ -59,7 +59,20 @@ class Login extends Component {
 
   }
 
+  componentDidMount() {
+    DocumentPicker.show({
+      filetype: [DocumentPickerUtil.images()],
+    },(error,res) => {
+      // Android
+      console.log(
+         res.uri,
+         res.type, // mime type
+         res.fileName,
+         res.fileSize
+      );
+    });
 
+  }
   onLoginPress() {
 
     this.setState({
@@ -124,7 +137,8 @@ class Login extends Component {
             </View>
             <TouchableOpacity
               style={styles.buttonContainer}
-              onPress={this.onLoginPress.bind(this)}
+              //onPress={/* this.onLoginPress.bind(this) */
+                //openFileSelector()}
             >
               <Text style={styles.buttonText}>LOGIN</Text>
             </TouchableOpacity>

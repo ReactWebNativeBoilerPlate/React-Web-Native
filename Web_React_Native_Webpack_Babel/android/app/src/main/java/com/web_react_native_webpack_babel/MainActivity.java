@@ -1,6 +1,7 @@
 package com.web_react_native_webpack_babel;
 
 import com.facebook.react.ReactActivity;
+import com.reactnativedocumentpicker.ReactNativeDocumentPicker;
 
 public class MainActivity extends ReactActivity {
 
