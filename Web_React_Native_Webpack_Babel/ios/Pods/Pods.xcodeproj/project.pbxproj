@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF025C6148F4448C34876608BBE6639 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0DA6C3043A1EEF568E5B14979A7D58 /* GTMDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B6053DB4F426B47C4A91E97990824D3 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ADAAF6BC334D4615244EF2CA5F0F75 /* GoogleToolboxForMac-dummy.m */; };
+		3D5A8358B3CE03D143C39C4BF52B34D3 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D04D8B4015B1071C49BC0EC0FC14F1 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		49B98D234C752930D75FF36AF0058902 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = FC2210FCD8FA5AB9BB006D3ED3702288 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A000C51C0AC5052A13EFC475BA44EF84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AE40968E45EB75088481466E4E7671A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D3C81BA07D845FB86FD1B5D2DF45E7DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E1E31AA67F930E00B11AE45B446697AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E8D55E6528D611A612859A7638CFE90C /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B9EC87755F8D545012D37CF8C43CD /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-dummy.m */; };
+		F4137F19AFED8EED98053BF8157B6B5A /* Pods-Web_React_Native_Webpack_Babel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E1A0E5E491F8955D16C4AE7CA08B3 /* Pods-Web_React_Native_Webpack_Babel-dummy.m */; };
+		FF7043D948F94D7792C160A8AF2BF7DF /* Pods-Web_React_Native_Webpack_BabelTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF8F120D0A283DC796FEC1051ED9006 /* Pods-Web_React_Native_Webpack_BabelTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0267567B950055D2E01DA8D1D7F1B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1BBB76ADBF2EF4EF2CE5DF6BBC77296;
+			remoteInfo = GoogleToolboxForMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044E1A0E5E491F8955D16C4AE7CA08B3 /* Pods-Web_React_Native_Webpack_Babel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Web_React_Native_Webpack_Babel-dummy.m"; sourceTree = "<group>"; };
+		16C4E3D59A524F6CAC63DB465E530933 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Web_React_Native_Webpack_Babel-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		16D319D663A81E59AA3637D0970BB2A0 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		17322C84B0CE7E26FF64B2241123EDD7 /* Pods-Web_React_Native_Webpack_Babel-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Web_React_Native_Webpack_Babel-resources.sh"; sourceTree = "<group>"; };
+		177D4C5CF07BDB348360352555CD63BA /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		1F08E190E50714259A69776FE91988CE /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Web_React_Native_Webpack_Babel-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2083822309FBA2AAAA5C63E1F9534BC8 /* Pods-Web_React_Native_Webpack_Babel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web_React_Native_Webpack_Babel.release.xcconfig"; sourceTree = "<group>"; };
+		20EFFED3ECED22441F10C944BC78AF83 /* Pods-Web_React_Native_Webpack_BabelTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Web_React_Native_Webpack_BabelTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2BEF90B077459A8B9958F035B6AD50A5 /* Pods-Web_React_Native_Webpack_BabelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Web_React_Native_Webpack_BabelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		34B360361F46BAA18142F87D4951F5EA /* Pods-Web_React_Native_Webpack_Babel-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Web_React_Native_Webpack_Babel-frameworks.sh"; sourceTree = "<group>"; };
+		370B9EC87755F8D545012D37CF8C43CD /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Web_React_Native_Webpack_Babel-tvOSTests-dummy.m"; sourceTree = "<group>"; };
+		3F0DA6C3043A1EEF568E5B14979A7D58 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		432E7CECA724EFF0352006806935AC99 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		4685644C5626F91005DDC065EEFEF70A /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGoogleToolboxForMac.a; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D601316653AE92880A42848B9B50D92 /* libPods-Web_React_Native_Webpack_BabelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Web_React_Native_Webpack_BabelTests.a"; path = "libPods-Web_React_Native_Webpack_BabelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65825EC3052180515246D6CD4513988D /* Pods-Web_React_Native_Webpack_BabelTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Web_React_Native_Webpack_BabelTests-frameworks.sh"; sourceTree = "<group>"; };
+		65ADAAF6BC334D4615244EF2CA5F0F75 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76DEC59E9C780D77E6D0FB6F0C1E0299 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Web_React_Native_Webpack_Babel-tvOSTests-resources.sh"; sourceTree = "<group>"; };
+		7CF3E8324FD55D5F56D3F7FF8E2110B4 /* Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DCFB3793E89E4DD1BEF67819522A36E /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		800E86821684C44295B379E6FDCB8C55 /* Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		896C60B504A48B4E8D7C3DA67EDE19E0 /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Web_React_Native_Webpack_Babel-tvOSTests.a"; path = "libPods-Web_React_Native_Webpack_Babel-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		982C47675E0924A48DF4F9D326BE3114 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		9AF8F120D0A283DC796FEC1051ED9006 /* Pods-Web_React_Native_Webpack_BabelTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Web_React_Native_Webpack_BabelTests-dummy.m"; sourceTree = "<group>"; };
+		9EE691B847A7A116E8F546625CC68406 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Web_React_Native_Webpack_Babel-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B19EFC7F504D72B7C606F88F82956333 /* libPods-Web_React_Native_Webpack_Babel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Web_React_Native_Webpack_Babel.a"; path = "libPods-Web_React_Native_Webpack_Babel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D04D8B4015B1071C49BC0EC0FC14F1 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		B4D4970E364A27F60CEEF19E5869D8F2 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		CB89AA510C4D88FBC7B3ACB1E819D4F3 /* Pods-Web_React_Native_Webpack_Babel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Web_React_Native_Webpack_Babel-acknowledgements.plist"; sourceTree = "<group>"; };
+		D4256285A059217607B60326C2525F1A /* Pods-Web_React_Native_Webpack_Babel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web_React_Native_Webpack_Babel.debug.xcconfig"; sourceTree = "<group>"; };
+		DB970382F8889D98D165BDC71FD5F657 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		DF00FD9DB781D1759F86B4A7E73A143A /* Pods-Web_React_Native_Webpack_Babel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Web_React_Native_Webpack_Babel-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0994CDFB955D372CF1B1EBBAA879B7B /* Pods-Web_React_Native_Webpack_BabelTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Web_React_Native_Webpack_BabelTests-resources.sh"; sourceTree = "<group>"; };
+		E1AFD0DFA3094C10F9F3F60E4C8F935E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		ECE672053F5A181C607F818E7EBA7533 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA1478C6A8BC4887408371B973016536 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC2210FCD8FA5AB9BB006D3ED3702288 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16EB7C33BAD9113323279F3862FBAAE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A000C51C0AC5052A13EFC475BA44EF84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736872D0F6BFBDB3F36ED73405DE4E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE40968E45EB75088481466E4E7671A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D74856F0E25028326DD94FDA8C3F40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C81BA07D845FB86FD1B5D2DF45E7DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FDF52442D8E92DC353CD8ACCA93A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E31AA67F930E00B11AE45B446697AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B9DD195B2EB39875CE4F9DB0CA2B46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1AFD0DFA3094C10F9F3F60E4C8F935E /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1902584E8A324636B983CA3D69528EAC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				982C47675E0924A48DF4F9D326BE3114 /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1BB83A55EE4F26A09FDEB7D8C4EFE9D4 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				00B9DD195B2EB39875CE4F9DB0CA2B46 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		205192F25C2B259CCFB8ED986C6AFD13 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EE691B847A7A116E8F546625CC68406 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-acknowledgements.markdown */,
+				1F08E190E50714259A69776FE91988CE /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-acknowledgements.plist */,
+				370B9EC87755F8D545012D37CF8C43CD /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-dummy.m */,
+				16C4E3D59A524F6CAC63DB465E530933 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-frameworks.sh */,
+				76DEC59E9C780D77E6D0FB6F0C1E0299 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-resources.sh */,
+				ECE672053F5A181C607F818E7EBA7533 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig */,
+				FA1478C6A8BC4887408371B973016536 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-Web_React_Native_Webpack_Babel-tvOSTests";
+			path = "Target Support Files/Pods-Web_React_Native_Webpack_Babel-tvOSTests";
+			sourceTree = "<group>";
+		};
+		2284E6854AEBDD17F420B24354609F96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43C8441995161C3CDF44AADF5762D23F /* Firebase */,
+				1BB83A55EE4F26A09FDEB7D8C4EFE9D4 /* FirebaseAnalytics */,
+				575F821D6CB8FC8C293759C130C977D8 /* FirebaseCore */,
+				E87A63BCF37F31D242208A3C2B333B8B /* FirebaseInstanceID */,
+				881128CF58F20FAC26C9A663AD12F324 /* GoogleToolboxForMac */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		26378C19D42F2D1E9DC44B0F26DA132C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				177D4C5CF07BDB348360352555CD63BA /* GoogleToolboxForMac.xcconfig */,
+				65ADAAF6BC334D4615244EF2CA5F0F75 /* GoogleToolboxForMac-dummy.m */,
+				432E7CECA724EFF0352006806935AC99 /* GoogleToolboxForMac-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		43C8441995161C3CDF44AADF5762D23F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				1902584E8A324636B983CA3D69528EAC /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		521B8B849F799E993679524A7FFEF52A /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				FC2210FCD8FA5AB9BB006D3ED3702288 /* GTMNSData+zlib.h */,
+				B1D04D8B4015B1071C49BC0EC0FC14F1 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		575F821D6CB8FC8C293759C130C977D8 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				E6C72B891F2790C95D9584F2F81A8F90 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		5C9074FDF768E5681BC68C78C105CAD6 /* Pods-Web_React_Native_Webpack_BabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BEF90B077459A8B9958F035B6AD50A5 /* Pods-Web_React_Native_Webpack_BabelTests-acknowledgements.markdown */,
+				20EFFED3ECED22441F10C944BC78AF83 /* Pods-Web_React_Native_Webpack_BabelTests-acknowledgements.plist */,
+				9AF8F120D0A283DC796FEC1051ED9006 /* Pods-Web_React_Native_Webpack_BabelTests-dummy.m */,
+				65825EC3052180515246D6CD4513988D /* Pods-Web_React_Native_Webpack_BabelTests-frameworks.sh */,
+				E0994CDFB955D372CF1B1EBBAA879B7B /* Pods-Web_React_Native_Webpack_BabelTests-resources.sh */,
+				800E86821684C44295B379E6FDCB8C55 /* Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig */,
+				7CF3E8324FD55D5F56D3F7FF8E2110B4 /* Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig */,
+			);
+			name = "Pods-Web_React_Native_Webpack_BabelTests";
+			path = "Target Support Files/Pods-Web_React_Native_Webpack_BabelTests";
+			sourceTree = "<group>";
+		};
+		700682CC1DA7483012C005F5B9C38533 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4685644C5626F91005DDC065EEFEF70A /* libGoogleToolboxForMac.a */,
+				B19EFC7F504D72B7C606F88F82956333 /* libPods-Web_React_Native_Webpack_Babel.a */,
+				896C60B504A48B4E8D7C3DA67EDE19E0 /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a */,
+				4D601316653AE92880A42848B9B50D92 /* libPods-Web_React_Native_Webpack_BabelTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2284E6854AEBDD17F420B24354609F96 /* Pods */,
+				700682CC1DA7483012C005F5B9C38533 /* Products */,
+				8E653989B978E411B59199CA57CDCAF5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		881128CF58F20FAC26C9A663AD12F324 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				E69BF1016542956F8C169309AED6BDC2 /* Defines */,
+				521B8B849F799E993679524A7FFEF52A /* NSData+zlib */,
+				26378C19D42F2D1E9DC44B0F26DA132C /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		8E653989B978E411B59199CA57CDCAF5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9110060E3C7F8FFF265DD702E72465F0 /* Pods-Web_React_Native_Webpack_Babel */,
+				205192F25C2B259CCFB8ED986C6AFD13 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests */,
+				5C9074FDF768E5681BC68C78C105CAD6 /* Pods-Web_React_Native_Webpack_BabelTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9110060E3C7F8FFF265DD702E72465F0 /* Pods-Web_React_Native_Webpack_Babel */ = {
+			isa = PBXGroup;
+			children = (
+				DF00FD9DB781D1759F86B4A7E73A143A /* Pods-Web_React_Native_Webpack_Babel-acknowledgements.markdown */,
+				CB89AA510C4D88FBC7B3ACB1E819D4F3 /* Pods-Web_React_Native_Webpack_Babel-acknowledgements.plist */,
+				044E1A0E5E491F8955D16C4AE7CA08B3 /* Pods-Web_React_Native_Webpack_Babel-dummy.m */,
+				34B360361F46BAA18142F87D4951F5EA /* Pods-Web_React_Native_Webpack_Babel-frameworks.sh */,
+				17322C84B0CE7E26FF64B2241123EDD7 /* Pods-Web_React_Native_Webpack_Babel-resources.sh */,
+				D4256285A059217607B60326C2525F1A /* Pods-Web_React_Native_Webpack_Babel.debug.xcconfig */,
+				2083822309FBA2AAAA5C63E1F9534BC8 /* Pods-Web_React_Native_Webpack_Babel.release.xcconfig */,
+			);
+			name = "Pods-Web_React_Native_Webpack_Babel";
+			path = "Target Support Files/Pods-Web_React_Native_Webpack_Babel";
+			sourceTree = "<group>";
+		};
+		A74D88AB047B2B5C4DE5A5AA644ADCAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB970382F8889D98D165BDC71FD5F657 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E69BF1016542956F8C169309AED6BDC2 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				3F0DA6C3043A1EEF568E5B14979A7D58 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		E6C72B891F2790C95D9584F2F81A8F90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DCFB3793E89E4DD1BEF67819522A36E /* FirebaseCore.framework */,
+				B4D4970E364A27F60CEEF19E5869D8F2 /* FirebaseCoreDiagnostics.framework */,
+				16D319D663A81E59AA3637D0970BB2A0 /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E87A63BCF37F31D242208A3C2B333B8B /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				A74D88AB047B2B5C4DE5A5AA644ADCAB /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34476B01833D8F46D0CEB0D1A2BDEECD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF025C6148F4448C34876608BBE6639 /* GTMDefines.h in Headers */,
+				49B98D234C752930D75FF36AF0058902 /* GTMNSData+zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		361866E458CB57527981056B401ECF7D /* Pods-Web_React_Native_Webpack_BabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997CE7C38976E61AF1688CBD0CDF7FEB /* Build configuration list for PBXNativeTarget "Pods-Web_React_Native_Webpack_BabelTests" */;
+			buildPhases = (
+				FF4B513C768257FC773319E842DC15B6 /* Sources */,
+				16EB7C33BAD9113323279F3862FBAAE5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Web_React_Native_Webpack_BabelTests";
+			productName = "Pods-Web_React_Native_Webpack_BabelTests";
+			productReference = 4D601316653AE92880A42848B9B50D92 /* libPods-Web_React_Native_Webpack_BabelTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7FB6DC8B25FB6B0752990A3BC4E5059E /* Pods-Web_React_Native_Webpack_Babel-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C9B3BC8DAEBA0415DFE24227BDDABA /* Build configuration list for PBXNativeTarget "Pods-Web_React_Native_Webpack_Babel-tvOSTests" */;
+			buildPhases = (
+				C58399D88370B0F97D0201B9C79880C3 /* Sources */,
+				B2D74856F0E25028326DD94FDA8C3F40 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Web_React_Native_Webpack_Babel-tvOSTests";
+			productName = "Pods-Web_React_Native_Webpack_Babel-tvOSTests";
+			productReference = 896C60B504A48B4E8D7C3DA67EDE19E0 /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A958127A69F7BBB11CE3E1FE4319323C /* Pods-Web_React_Native_Webpack_Babel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C33FF61DF2AFD365A55B5B16C277E3EC /* Build configuration list for PBXNativeTarget "Pods-Web_React_Native_Webpack_Babel" */;
+			buildPhases = (
+				89DCC87F4E31D045C1F90F613D4333E2 /* Sources */,
+				B5FDF52442D8E92DC353CD8ACCA93A88 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1F6F0C234049D60D4BF2C360FD74B30 /* PBXTargetDependency */,
+			);
+			name = "Pods-Web_React_Native_Webpack_Babel";
+			productName = "Pods-Web_React_Native_Webpack_Babel";
+			productReference = B19EFC7F504D72B7C606F88F82956333 /* libPods-Web_React_Native_Webpack_Babel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E910B89548204C9E82F8F7CCB1460E /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				E039C8832DF36C6AA9B398412DBAA4B5 /* Sources */,
+				736872D0F6BFBDB3F36ED73405DE4E29 /* Frameworks */,
+				34476B01833D8F46D0CEB0D1A2BDEECD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = 4685644C5626F91005DDC065EEFEF70A /* libGoogleToolboxForMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 700682CC1DA7483012C005F5B9C38533 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */,
+				A958127A69F7BBB11CE3E1FE4319323C /* Pods-Web_React_Native_Webpack_Babel */,
+				7FB6DC8B25FB6B0752990A3BC4E5059E /* Pods-Web_React_Native_Webpack_Babel-tvOSTests */,
+				361866E458CB57527981056B401ECF7D /* Pods-Web_React_Native_Webpack_BabelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89DCC87F4E31D045C1F90F613D4333E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4137F19AFED8EED98053BF8157B6B5A /* Pods-Web_React_Native_Webpack_Babel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58399D88370B0F97D0201B9C79880C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D55E6528D611A612859A7638CFE90C /* Pods-Web_React_Native_Webpack_Babel-tvOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E039C8832DF36C6AA9B398412DBAA4B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6053DB4F426B47C4A91E97990824D3 /* GoogleToolboxForMac-dummy.m in Sources */,
+				3D5A8358B3CE03D143C39C4BF52B34D3 /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B513C768257FC773319E842DC15B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7043D948F94D7792C160A8AF2BF7DF /* Pods-Web_React_Native_Webpack_BabelTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1F6F0C234049D60D4BF2C360FD74B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */;
+			targetProxy = B0267567B950055D2E01DA8D1D7F1B1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BEB83350B295D0AD4E5E7F9DF5A65A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4256285A059217607B60326C2525F1A /* Pods-Web_React_Native_Webpack_Babel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64C9EFECE4A17B8C29B0692FD7FB7C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177D4C5CF07BDB348360352555CD63BA /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69FB4A34154F5487AE314A6885DE0858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE672053F5A181C607F818E7EBA7533 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7696676C7A310B0AFB74FA30B1A426FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF3E8324FD55D5F56D3F7FF8E2110B4 /* Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95AD722A9E7E4827CF19CB5F168DBF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2083822309FBA2AAAA5C63E1F9534BC8 /* Pods-Web_React_Native_Webpack_Babel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BAD2CF326DC3D804E8541DA163BEBFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1478C6A8BC4887408371B973016536 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6D40DEFD21EC4301DD2CA1AB8EE267C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800E86821684C44295B379E6FDCB8C55 /* Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F363A328A126A2A21385BD19FB27A60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177D4C5CF07BDB348360352555CD63BA /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C9B3BC8DAEBA0415DFE24227BDDABA /* Build configuration list for PBXNativeTarget "Pods-Web_React_Native_Webpack_Babel-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FB4A34154F5487AE314A6885DE0858 /* Debug */,
+				BAD2CF326DC3D804E8541DA163BEBFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		997CE7C38976E61AF1688CBD0CDF7FEB /* Build configuration list for PBXNativeTarget "Pods-Web_React_Native_Webpack_BabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D40DEFD21EC4301DD2CA1AB8EE267C /* Debug */,
+				7696676C7A310B0AFB74FA30B1A426FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C33FF61DF2AFD365A55B5B16C277E3EC /* Build configuration list for PBXNativeTarget "Pods-Web_React_Native_Webpack_Babel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BEB83350B295D0AD4E5E7F9DF5A65A3 /* Debug */,
+				95AD722A9E7E4827CF19CB5F168DBF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8E910B89548204C9E82F8F7CCB1460E /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F363A328A126A2A21385BD19FB27A60F /* Debug */,
+				64C9EFECE4A17B8C29B0692FD7FB7C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

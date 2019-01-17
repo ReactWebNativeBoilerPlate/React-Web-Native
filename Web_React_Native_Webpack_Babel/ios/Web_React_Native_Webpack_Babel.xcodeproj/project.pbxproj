@@ -37,12 +37,13 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* Web_React_Native_Webpack_BabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Web_React_Native_Webpack_BabelTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		64B089D376014D8FA1DF8A9E /* libRNAssetThumbnail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD08941412B4B47B8A27BDF /* libRNAssetThumbnail.a */; };
+		3D79C301E635EF22F2B58B7A /* libPods-Web_React_Native_Webpack_Babel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA2E00D7BECEC63DAF9C534 /* libPods-Web_React_Native_Webpack_Babel.a */; };
+		661C5B20AF392623BE51D013 /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E34A06EA7CD83507281BC /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a */; };
 		7330F28D1F164E778EB7A3D2 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CB400FFBF1432CBB5DF73C /* libRNFirebase.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		BDE25DF194CB49A18079D555 /* libRCTImageResizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDADF2991274812BB01470B /* libRCTImageResizer.a */; };
-		FF4E5D0F3D6A4214B55A3790 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1230739B61D4257918399D1 /* libRCTVideo.a */; };
+		DD91B7FB4ADBA79D9477B907 /* libPods-Web_React_Native_Webpack_BabelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0215D5D0299FD04F9F1CCB /* libPods-Web_React_Native_Webpack_BabelTests.a */; };
+		F766703021EF817100B1E2FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F766700821EF817100B1E2FC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,9 +327,9 @@
 			remoteGlobalIDString = E01DD9DB1D2311A600C39062;
 			remoteInfo = RNDocumentPicker;
 		};
-		F740298121EDE73800499CC8 /* PBXContainerItemProxy */ = {
+		F766706721F059C300B1E2FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C299B86DD0844AE595ACF1AE /* RNFirebase.xcodeproj */;
+			containerPortal = 602BA9963D5042D0BE5E5C8B /* RNFirebase.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
@@ -355,23 +356,30 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Web_React_Native_Webpack_Babel/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Web_React_Native_Webpack_Babel/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		17BE349CD64D782FD5F4D6DF /* Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Web_React_Native_Webpack_BabelTests/Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DD08941412B4B47B8A27BDF /* libRNAssetThumbnail.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAssetThumbnail.a; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Web_React_Native_Webpack_Babel-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web_React_Native_Webpack_Babel-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Web_React_Native_Webpack_Babel-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Web_React_Native_Webpack_Babel-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		51BCC790C76247EC8B868247 /* RNAssetThumbnail.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAssetThumbnail.xcodeproj; path = "../node_modules/react-native-asset-thumbnail/RNAssetThumbnail.xcodeproj"; sourceTree = "<group>"; };
-		5768041B5C8B4840AC4A5A39 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
+		2E0215D5D0299FD04F9F1CCB /* libPods-Web_React_Native_Webpack_BabelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Web_React_Native_Webpack_BabelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		448FF592BD54C5987C5A1E78 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel-tvOSTests/Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		602BA9963D5042D0BE5E5C8B /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		688ADA3F5C3596C4503612A6 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel-tvOSTests/Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		69EDD4188C6C2924002C544A /* Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Web_React_Native_Webpack_BabelTests/Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig"; sourceTree = "<group>"; };
+		716E34A06EA7CD83507281BC /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Web_React_Native_Webpack_Babel-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		A144957B39DA6AB552378020 /* Pods-Web_React_Native_Webpack_Babel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web_React_Native_Webpack_Babel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel/Pods-Web_React_Native_Webpack_Babel.release.xcconfig"; sourceTree = "<group>"; };
 		A5CB400FFBF1432CBB5DF73C /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		C299B86DD0844AE595ACF1AE /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		BDA2E00D7BECEC63DAF9C534 /* libPods-Web_React_Native_Webpack_Babel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Web_React_Native_Webpack_Babel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84289F673E8FE87EA043031 /* Pods-Web_React_Native_Webpack_Babel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web_React_Native_Webpack_Babel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel/Pods-Web_React_Native_Webpack_Babel.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDADF2991274812BB01470B /* libRCTImageResizer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTImageResizer.a; sourceTree = "<group>"; };
 		D1230739B61D4257918399D1 /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
 		D56A937D4865439389FC2EAF /* libRNDocumentPicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDocumentPicker.a; sourceTree = "<group>"; };
-		DC7442888CBE47E18D25DD6D /* RCTImageResizer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTImageResizer.xcodeproj; path = "../node_modules/react-native-hunterslog-media-picker/ios/RCTImageResizer.xcodeproj"; sourceTree = "<group>"; };
 		E18383A9523E4BAB91E184AC /* RNDocumentPicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDocumentPicker.xcodeproj; path = "../node_modules/react-native-document-picker/ios/RNDocumentPicker.xcodeproj"; sourceTree = "<group>"; };
+		F766700821EF817100B1E2FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				DD91B7FB4ADBA79D9477B907 /* libPods-Web_React_Native_Webpack_BabelTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +409,8 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				7330F28D1F164E778EB7A3D2 /* libRNFirebase.a in Frameworks */,
-				BDE25DF194CB49A18079D555 /* libRCTImageResizer.a in Frameworks */,
-				FF4E5D0F3D6A4214B55A3790 /* libRCTVideo.a in Frameworks */,
-				64B089D376014D8FA1DF8A9E /* libRNAssetThumbnail.a in Frameworks */,
 				280D9B2C8BFD43ECAD0B9507 /* libRNDocumentPicker.a in Frameworks */,
+				3D79C301E635EF22F2B58B7A /* libPods-Web_React_Native_Webpack_Babel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+				661C5B20AF392623BE51D013 /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +561,9 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				BDA2E00D7BECEC63DAF9C534 /* libPods-Web_React_Native_Webpack_Babel.a */,
+				716E34A06EA7CD83507281BC /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a */,
+				2E0215D5D0299FD04F9F1CCB /* libPods-Web_React_Native_Webpack_BabelTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -590,11 +601,8 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				C299B86DD0844AE595ACF1AE /* RNFirebase.xcodeproj */,
-				DC7442888CBE47E18D25DD6D /* RCTImageResizer.xcodeproj */,
-				5768041B5C8B4840AC4A5A39 /* RCTVideo.xcodeproj */,
-				51BCC790C76247EC8B868247 /* RNAssetThumbnail.xcodeproj */,
 				E18383A9523E4BAB91E184AC /* RNDocumentPicker.xcodeproj */,
+				602BA9963D5042D0BE5E5C8B /* RNFirebase.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -611,12 +619,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F766700821EF817100B1E2FC /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* Web_React_Native_Webpack_Babel */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* Web_React_Native_Webpack_BabelTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F740295221EDE70000499CC8 /* Recovered References */,
+				D4B6CD4B0A0918DF72C34C93 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -643,6 +653,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D4B6CD4B0A0918DF72C34C93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C84289F673E8FE87EA043031 /* Pods-Web_React_Native_Webpack_Babel.debug.xcconfig */,
+				A144957B39DA6AB552378020 /* Pods-Web_React_Native_Webpack_Babel.release.xcconfig */,
+				448FF592BD54C5987C5A1E78 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig */,
+				688ADA3F5C3596C4503612A6 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig */,
+				17BE349CD64D782FD5F4D6DF /* Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig */,
+				69EDD4188C6C2924002C544A /* Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F71A51A621EF52B800E618AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -663,10 +686,10 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		F740297921EDE73500499CC8 /* Products */ = {
+		F766703E21F059C300B1E2FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F740298221EDE73800499CC8 /* libRNFirebase.a */,
+				F766706821F059C300B1E2FC /* libRNFirebase.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -678,9 +701,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Web_React_Native_Webpack_BabelTests" */;
 			buildPhases = (
+				8008BD5F044426CD642A9ECB /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				84B647ECE2AE81EB775C2942 /* [CP] Embed Pods Frameworks */,
+				D723E913C7CDE10B79C95674 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -696,10 +722,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Web_React_Native_Webpack_Babel" */;
 			buildPhases = (
+				DA802784DE7D7FCC5F650CF1 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				ED00062CD020D5FC175A0F28 /* [CP] Embed Pods Frameworks */,
+				E16F1D967C5ABD5A8EECAC9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -732,9 +761,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Web_React_Native_Webpack_Babel-tvOSTests" */;
 			buildPhases = (
+				8F399F35369BFB7DEDF295EE /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
+				D508497F6A0940FE75934B05 /* [CP] Embed Pods Frameworks */,
+				777178C4409C2AA147C4CF1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -758,6 +790,10 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = UT23KJER38;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -835,8 +871,8 @@
 					ProjectRef = E18383A9523E4BAB91E184AC /* RNDocumentPicker.xcodeproj */;
 				},
 				{
-					ProductGroup = F740297921EDE73500499CC8 /* Products */;
-					ProjectRef = C299B86DD0844AE595ACF1AE /* RNFirebase.xcodeproj */;
+					ProductGroup = F766703E21F059C300B1E2FC /* Products */;
+					ProjectRef = 602BA9963D5042D0BE5E5C8B /* RNFirebase.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1116,11 +1152,11 @@
 			remoteRef = F71A51A921EF52B800E618AF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F740298221EDE73800499CC8 /* libRNFirebase.a */ = {
+		F766706821F059C300B1E2FC /* libRNFirebase.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNFirebase.a;
-			remoteRef = F740298121EDE73800499CC8 /* PBXContainerItemProxy */;
+			remoteRef = F766706721F059C300B1E2FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1139,6 +1175,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				F766703021EF817100B1E2FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1187,6 +1224,150 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		777178C4409C2AA147C4CF1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel-tvOSTests/Pods-Web_React_Native_Webpack_Babel-tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8008BD5F044426CD642A9ECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Web_React_Native_Webpack_BabelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84B647ECE2AE81EB775C2942 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Web_React_Native_Webpack_BabelTests/Pods-Web_React_Native_Webpack_BabelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F399F35369BFB7DEDF295EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Web_React_Native_Webpack_Babel-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D508497F6A0940FE75934B05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel-tvOSTests/Pods-Web_React_Native_Webpack_Babel-tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D723E913C7CDE10B79C95674 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Web_React_Native_Webpack_BabelTests/Pods-Web_React_Native_Webpack_BabelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA802784DE7D7FCC5F650CF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Web_React_Native_Webpack_Babel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E16F1D967C5ABD5A8EECAC9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel/Pods-Web_React_Native_Webpack_Babel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED00062CD020D5FC175A0F28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Web_React_Native_Webpack_Babel/Pods-Web_React_Native_Webpack_Babel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1255,6 +1436,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BE349CD64D782FD5F4D6DF /* Pods-Web_React_Native_Webpack_BabelTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1268,6 +1450,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = Web_React_Native_Webpack_BabelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1288,6 +1471,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EDD4188C6C2924002C544A /* Pods-Web_React_Native_Webpack_BabelTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1298,6 +1482,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = Web_React_Native_Webpack_BabelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1318,10 +1503,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84289F673E8FE87EA043031 /* Pods-Web_React_Native_Webpack_Babel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = UT23KJER38;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
@@ -1329,6 +1518,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = Web_React_Native_Webpack_Babel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1339,15 +1529,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Web_React_Native_Webpack_Babel;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A144957B39DA6AB552378020 /* Pods-Web_React_Native_Webpack_Babel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UT23KJER38;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
@@ -1355,6 +1550,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = Web_React_Native_Webpack_Babel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1365,6 +1561,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Web_React_Native_Webpack_Babel;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1388,6 +1585,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "Web_React_Native_Webpack_Babel-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1426,6 +1624,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "Web_React_Native_Webpack_Babel-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1447,6 +1646,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448FF592BD54C5987C5A1E78 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1463,6 +1663,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "Web_React_Native_Webpack_Babel-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1484,6 +1685,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 688ADA3F5C3596C4503612A6 /* Pods-Web_React_Native_Webpack_Babel-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1500,6 +1702,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-asset-thumbnail/RNAssetThumbnail",
 					"$(SRCROOT)/../node_modules/react-native-document-picker/ios/RNDocumentPicker",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "Web_React_Native_Webpack_Babel-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
