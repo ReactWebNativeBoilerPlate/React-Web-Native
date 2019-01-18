@@ -12,6 +12,8 @@ pod 'Firebase/Core'
     # Pods for testing
     pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+    pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
   end
 
   target 'Web_React_Native_Webpack_BabelTests' do
