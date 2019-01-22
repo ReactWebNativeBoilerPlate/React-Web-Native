@@ -86,13 +86,13 @@ class Login extends Component {
 
 
   render() {
-
+    console.log("This is " , global.getImage(global.ImageName.IMG_SPLASH))
     return (
       <View style={styles.container}>
         <Loader loading={this.state.loading} />
         <View behavior="padding" style={styles.container}>
           <View style={styles.logoContainer}>
-            <Image style={styles.logo} source={require("./banana.png")} />
+            <Image style={styles.logo} source={global.getImage(global.ImageName.IMG_SPLASH)} /> 
             <Text style={styles.subtext}>{this.state.message}</Text>
           </View>
           <KeyboardAvoidingView style={styles.keyboard}>
