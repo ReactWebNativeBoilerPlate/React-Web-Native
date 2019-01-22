@@ -1,0 +1,10 @@
+{
+    "login": {
+      "welcome": "Welcome {{name}} to our localized app!",
+      "login-button": "Login",
+      "signup-button": "Sign Up"
+    },
+    "user_profile": {
+      "title": "Your Profile"  
+    }
+  }

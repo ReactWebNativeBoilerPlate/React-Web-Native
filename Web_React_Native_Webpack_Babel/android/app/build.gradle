@@ -95,7 +95,7 @@ def enableProguardInReleaseBuilds = false
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.web_react_native_webpack_babel"
@@ -143,6 +143,7 @@ repositories {
 }
 
 dependencies {
+    compile project(':react-native-i18n')
     compile project(':react-native-image-picker')
     compile project(':react-native-gesture-handler')
     compile project(':react-native-document-picker')
