@@ -1,0 +1,10 @@
+{
+    "login": {
+      "welcome": "{{name}}, ברוך הבא לאפליקציה המתורגמת!",
+      "login-button": "התחבר",
+      "signup-button": "הרשם"
+    },
+    "user_profile": {
+      "title": "הפרופיל שלך"  
+    }
+  }
