@@ -15,6 +15,9 @@ import ForgetPassword from "../containers/login/ForgetPassword";
 import Register from "../containers/login/Register";
 import LoginHome from "../containers/login/index"
 
+import FilePicker from '../components/FilePicker'
+import CameraView from '../components/CameraView'
+
 /****************************************************************/
 
 
@@ -49,6 +52,16 @@ const AppNavigator = StackNavigator({
     screen: Drawer,
     navigationOptions: {
       title: "Dashbaord"
+    }
+  },FilePicker: {
+    screen: FilePicker,
+    navigationOptions: {
+      title: "FilePicker"
+    }
+  },CameraView: {
+    screen: CameraView,
+    navigationOptions: {
+      title: "CameraView"
     }
   },
 });

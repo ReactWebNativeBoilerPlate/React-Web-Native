@@ -8,7 +8,8 @@ import React, { Component } from 'react';
 import {
     StyleSheet,
     View,
-    StatusBar
+    Text,
+    TouchableOpacity
 } from 'react-native';
 
 
@@ -24,15 +25,29 @@ class SideDrawer extends Component {
     };
     render() {
         return (
-            <View style={styles.container}>
-              
+            <View>
+                <TouchableOpacity style={styles.container}
+                    onPress = {() => this.props.navigation.navigate('FilePicker')}>
+                    <Text style = {styles.itemTextStyle}>File Picker</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.container}
+                    onPress = {() => this.props.navigation.navigate('CameraView')}>
+                    <Text style = {styles.itemTextStyle}>Camera</Text>
+                </TouchableOpacity>
             </View>
         );
     }
 }
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        padding : 20
+    },
+
+    itemTextStyle : {
+        fontSize : 16,
+        color : 'black'
     }
 });
 export default SideDrawer;
