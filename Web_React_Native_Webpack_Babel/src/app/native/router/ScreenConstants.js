@@ -3,5 +3,5 @@ exports.SCREENS = {
   LOGIN:"LoginHome",
   REGISTER:  "Register",
   FORGETPASSWORD:  "ForgetPassword",
-  DASHBOARD:  "Dashbaord"
+  DASHBOARD:  "Dashboard"
 }

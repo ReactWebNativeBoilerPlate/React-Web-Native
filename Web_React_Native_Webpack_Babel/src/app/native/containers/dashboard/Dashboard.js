@@ -34,10 +34,8 @@ class Dashboard extends Component {
 
   render() {
 
-    ///const { navigate } = this.props.navigation
-    const { color, data } = this.props.toggleReducer;
-    console.log("Inside component");
-    console.log(this.props);
+  
+
     return (
       <View style={appStyle.reactNativeWeb}>
       
@@ -55,7 +53,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggle: bindActionCreators(toggleColor, dispatch),
+    
   };
 }
 
