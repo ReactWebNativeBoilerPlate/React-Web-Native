@@ -1,30 +1,29 @@
-import ReactNative from 'react-native';
-import I18n from 'react-native-i18n';
+import i18n from "i18next";
+import { reactI18nextModule } from "react-i18next";
 
 // Import all locales
 import en from './en.json';
 import he from './he.json';
 
-// Should the app fallback to English if user locale doesn't exists
-I18n.fallbacks = true;
+// the translations
+const resources = {
+    en: {
+      translation: en
+    },
+    he: {
+      translation: he
+    }
+  };
 
-// Define the supported translations
-I18n.translations = {
-  en,
-  he
-};
+i18n
+  .use(reactI18nextModule) // passes i18n down to react-i18next
+  .init({
+    resources,
+    lng: "en",
 
-const currentLocale = I18n.currentLocale();
+    interpolation: {
+      escapeValue: false // react already safes from xss
+    }
+  });
 
-// Is it a RTL language?
-export const isRTL = currentLocale.indexOf('he') === 0 || currentLocale.indexOf('ar') === 0;
-
-// Allow RTL alignment in RTL languages
-ReactNative.I18nManager.allowRTL(isRTL);
-
-// The method we'll use instead of a regular string
-export function strings(name, params = {}) {
-  return I18n.t(name, params);
-};
-
-export default I18n;
+export default i18n;

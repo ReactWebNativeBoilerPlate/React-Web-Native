@@ -6,5 +6,6 @@
     },
     "user_profile": {
       "title": "Your Profile"  
-    }
+    },
+    "test" : "testing"
   }
