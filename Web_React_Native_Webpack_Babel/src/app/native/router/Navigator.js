@@ -15,8 +15,9 @@ import ForgetPassword from "../containers/login/ForgetPassword";
 import Register from "../containers/login/Register";
 import LoginHome from "../containers/login/index"
 
-import FilePicker from '../components/FilePicker'
-import CameraView from '../components/CameraView'
+import FilePicker from '../components/FilePicker';
+import CameraView from '../components/CameraView';
+import MapView from '../components/MapView'
 
 /****************************************************************/
 
@@ -62,6 +63,11 @@ const AppNavigator = StackNavigator({
     screen: CameraView,
     navigationOptions: {
       title: "CameraView"
+    }
+  },MapView: {
+    screen: MapView,
+    navigationOptions: {
+      title: "MapView"
     }
   },
 });
