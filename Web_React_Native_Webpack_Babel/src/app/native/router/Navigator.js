@@ -9,9 +9,9 @@ import SplashScreen from '../containers/Splash'
 import Dashbaord from '../containers/dashboard/Dashboard';
 // import LoginScreen from '../containers/AuthScreen/index'
 
-import ForgetPassword from "../containers/LoginRegister/ForgetPassword";
-import Register from "../containers/LoginRegister/Register";
-import LoginHome from "../containers/LoginRegister/index"
+import ForgetPassword from "../containers/login/ForgetPassword";
+import Register from "../containers/login/Register";
+import LoginHome from "../containers/login/index"
 
 /****************************************************************/
 
@@ -21,7 +21,7 @@ const AppNavigator = createStackNavigator({
   Splash: {
     screen: SplashScreen,
     navigationOptions: {
-      title: "LoginHome"
+      header: null
     }
 
   },

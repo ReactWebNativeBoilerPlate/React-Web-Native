@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Loader from "../../components/loader";
-
+import ScreenConst from "../../router/ScreenConstants"
+import SnackBar from 'react-native-snackbar-component'
 import {
 
   KeyboardAvoidingView,
   TouchableOpacity,
-  AsyncStorage,
   Image,
   TextInput,
   StyleSheet, // CSS-like styles
@@ -58,29 +58,47 @@ class Login extends Component {
 
   }
 
-  onLoginPress() {
+  onLoginPress = () =>{
 
     this.setState({
       message: "",
       loading: false,
-      success: false
+      success: false,
+      showSnackbar:false,
+      snackMessage:''
     })
 
+    if(this.state.email.length === 0)
+    {
+      this.setState({showSnackbar:true, snackMessage:"Invalide username"})
+      return;
+    }
+
+    if(this.state.password.length === 0)
+    {
+      this.setState({showSnackbar:true, snackMessage:"Invalide password"})
+      return;
+    }
 
     const { email, password } = this.state;
     var payload = {
       email: email,
       password: password
-
     }
+
+
     console.log((email, password))
     console.log(this.props.LoginActions)
-    if (this.props.LoginActions) {
-      this.setState({
-        loading: true
-      });
-      this.props.LoginActions.doLogin(payload);
-    }
+   // if (this.props.LoginActions) {
+
+      // Uncomment this to show loading indicator
+      // this.setState({
+      //   loading: true
+      // });
+     // this.props.LoginActions.doLogin(payload);
+    
+    //}
+    this.props.navigation.navigate(ScreenConst.SCREENS.DASHBOARD)
   }
 
 
@@ -90,6 +108,7 @@ class Login extends Component {
     return (
       <View style={styles.container}>
         <Loader loading={this.state.loading} />
+        <SnackBar visible={this.state.showSnackbar} textMessage={this.state.snackMessage} actionHandler={()=>{this.setState({showSnackbar:false})}} actionText="ok"/>
         <View behavior="padding" style={styles.container}>
           <View style={styles.logoContainer}>
             <Image style={styles.logo} source={global.getImage(global.ImageName.IMG_SPLASH)} /> 
@@ -122,8 +141,8 @@ class Login extends Component {
             </View>
             <TouchableOpacity
               style={styles.buttonContainer}
-              //onPress={/* this.onLoginPress.bind(this) */
-                //openFileSelector()}
+              onPress={this.onLoginPress} 
+                
             >
               <Text style={styles.buttonText}>LOGIN</Text>
             </TouchableOpacity>

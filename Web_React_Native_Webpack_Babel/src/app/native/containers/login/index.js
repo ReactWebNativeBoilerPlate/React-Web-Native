@@ -11,7 +11,7 @@ import {
     StatusBar
 } from 'react-native';
 
-import Login from "../LoginRegister/Login";
+import Login from "../login/Login";
 
 
 class LoginHome extends Component {
