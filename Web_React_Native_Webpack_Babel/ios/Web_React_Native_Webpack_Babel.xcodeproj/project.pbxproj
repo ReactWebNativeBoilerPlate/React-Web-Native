@@ -68,6 +68,8 @@
 		F727F4C321F88BF200F31842 /* SMCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F727F48321F88BEF00F31842 /* SMCalloutView.m */; };
 		F727F4C421F88BF200F31842 /* RCTConvert+AirMap.m in Sources */ = {isa = PBXBuildFile; fileRef = F727F48521F88BEF00F31842 /* RCTConvert+AirMap.m */; };
 		F766703021EF817100B1E2FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F766700821EF817100B1E2FC /* GoogleService-Info.plist */; };
+		F787E1482208468000E8E290 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		F787E16E2208480800E8E290 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F787E16F2208480800E8E290 /* libRNSVG.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -454,6 +456,7 @@
 		F727F48421F88BEF00F31842 /* RCTConvert+AirMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+AirMap.h"; sourceTree = "<group>"; };
 		F727F48521F88BEF00F31842 /* RCTConvert+AirMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+AirMap.m"; sourceTree = "<group>"; };
 		F766700821EF817100B1E2FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F787E16F2208480800E8E290 /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNSVG.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,7 +473,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F787E1482208468000E8E290 /* libRCTAnimation.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
+				F787E16E2208480800E8E290 /* libRNSVG.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -636,6 +641,7 @@
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				BDA2E00D7BECEC63DAF9C534 /* libPods-Web_React_Native_Webpack_Babel.a */,
+				F787E16F2208480800E8E290 /* libRNSVG.a */,
 				716E34A06EA7CD83507281BC /* libPods-Web_React_Native_Webpack_Babel-tvOSTests.a */,
 				2E0215D5D0299FD04F9F1CCB /* libPods-Web_React_Native_Webpack_BabelTests.a */,
 			);

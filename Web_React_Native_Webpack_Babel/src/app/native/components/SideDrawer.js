@@ -60,6 +60,12 @@ class SideDrawer extends Component {
                                 <Text style={styles.itemTextStyle}>Map</Text>
                             </TouchableOpacity>
                         </ListItem>
+                        <ListItem>
+                            <TouchableOpacity style={styles.container}
+                                onPress={() => this.props.navigation.navigate('ChartView')}>
+                                <Text style={styles.itemTextStyle}>Charts</Text>
+                            </TouchableOpacity>
+                        </ListItem>
                     </List>
                 </Content>
             </Container>

@@ -18,6 +18,7 @@ import LoginHome from "../containers/login/index"
 import FilePicker from '../components/FilePicker';
 import CameraView from '../components/CameraView';
 import MapView from '../components/MapView'
+import ChartView from '../components/ChartView'
 
 /****************************************************************/
 
@@ -54,20 +55,25 @@ const AppNavigator = StackNavigator({
     navigationOptions: {
       title: "Dashbaord"
     }
-  },FilePicker: {
+  }, FilePicker: {
     screen: FilePicker,
     navigationOptions: {
       title: "FilePicker"
     }
-  },CameraView: {
+  }, CameraView: {
     screen: CameraView,
     navigationOptions: {
       title: "CameraView"
     }
-  },MapView: {
+  }, MapView: {
     screen: MapView,
     navigationOptions: {
       title: "MapView"
+    }
+  }, ChartView: {
+    screen: ChartView,
+    navigationOptions: {
+      title: "ChartView"
     }
   },
 });
