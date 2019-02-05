@@ -1,19 +1,37 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 
 import appStyle from '../../styles/styles';
 import HelloWorld from '../../components/HelloWorld';
 
 import Toolbar from '../../components/ToolbarWithMenu';
+import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
+import { Container, Header, Content, Tab, Tabs } from 'native-base';
+import Holder from '../../components/HolderComponent'
 
 /************************** Redux************************/
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 /********************************************************/
 
-
+const FirstRoute = () => (
+  <View style={[styles.scene, { backgroundColor: '#ff4081' }]} />
+);
+const SecondRoute = () => (
+  <View style={[styles.scene, { backgroundColor: '#673ab7' }]} />
+);
 
 class Dashboard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0,
+      routes: [
+        { key: 'first', title: 'First' },
+        { key: 'second', title: 'Second' },
+      ],
+    };
+  }
 
   componentDidMount() {
     this.interval = setInterval(
@@ -36,14 +54,30 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <View>
-        <Toolbar headerText = 'Dashboard'></Toolbar> 
-      </View>
+        <Container>
+        <Toolbar headerText = 'Dashboard'></Toolbar>
+        <Tabs>
+          <Tab heading="Tab1">
+          <Holder />
+          </Tab>
+          <Tab heading="Tab2">
+            <Holder />
+          </Tab>
+          <Tab heading="Tab3">
+            <Holder />
+          </Tab>
+        </Tabs>
+      </Container>
 
     );
   }
 }
 
+const styles = StyleSheet.create({
+  scene: {
+    flex: 1,
+  },
+});
 
 const mapStateToProps = state => {
   console.log('login new mapStateToProps', state);
