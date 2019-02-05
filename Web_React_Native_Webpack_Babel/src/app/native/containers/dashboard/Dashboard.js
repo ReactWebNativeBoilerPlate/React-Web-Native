@@ -5,7 +5,6 @@ import appStyle from "../../styles/styles";
 import HelloWorld from "../../components/HelloWorld";
 
 import Toolbar from "../../components/ToolbarWithMenu";
-import { TabView, TabBar, SceneMap } from "react-native-tab-view";
 import { Container, Header, Content, Tab, Tabs } from "native-base";
 import Holder from "../../components/HolderComponent";
 
@@ -22,17 +21,6 @@ const SecondRoute = () => (
 );
 
 class Dashboard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 0,
-      routes: [
-        { key: "first", title: "First" },
-        { key: "second", title: "Second" }
-      ]
-    };
-  }
-
   componentDidMount() {
     this.interval = setInterval(() => {
       clearInterval(this.interval);
@@ -51,7 +39,7 @@ class Dashboard extends Component {
   render() {
     return (
       <Container>
-        <Toolbar headerText="Dashboard" />
+        <Toolbar headerText="Dashboard" navigation={this.props.navigation} />
         <Tabs>
           <Tab heading="Tab1">
             <Holder />

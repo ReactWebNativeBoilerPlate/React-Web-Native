@@ -65,12 +65,12 @@ class Login extends Component {
     });
 
     if (this.state.email.length === 0) {
-      this.setState({ showSnackbar: true, snackMessage: "Invalide username" });
+      this.setState({ showSnackbar: true, snackMessage: "Invalid username" });
       return;
     }
 
     if (this.state.password.length === 0) {
-      this.setState({ showSnackbar: true, snackMessage: "Invalide password" });
+      this.setState({ showSnackbar: true, snackMessage: "Invalid password" });
       return;
     }
 

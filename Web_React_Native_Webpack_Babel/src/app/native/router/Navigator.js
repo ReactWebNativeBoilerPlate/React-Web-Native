@@ -58,22 +58,22 @@ const AppNavigator = StackNavigator({
   }, FilePicker: {
     screen: FilePicker,
     navigationOptions: {
-      title: "FilePicker"
+      header: null
     }
   }, CameraView: {
     screen: CameraView,
     navigationOptions: {
-      title: "CameraView"
+      header: null
     }
   }, MapView: {
     screen: MapView,
     navigationOptions: {
-      title: "MapView"
+      header: null
     }
   }, ChartView: {
     screen: ChartView,
     navigationOptions: {
-      title: "ChartView"
+      header: null
     }
   },
 });

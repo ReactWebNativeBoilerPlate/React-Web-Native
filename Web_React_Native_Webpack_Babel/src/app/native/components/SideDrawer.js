@@ -21,15 +21,14 @@ class SideDrawer extends Component {
     return (
       <Container>
         <Content>
-          <Image
-            source={require("../../images/avatar.png")}
-            style={{
-              height: 120,
-              alignSelf: "center",
-              justifyContent: "center",
-              alignItems: "center"
-            }}
-          />
+          <View style={{ alignItems: "center" }}>
+            <Image
+              style={styles.avatar}
+              source={{
+                uri: "https://bootdey.com/img/Content/avatar/avatar6.png"
+              }}
+            />
+          </View>
           <List>
             <ListItem>
               <TouchableOpacity
@@ -106,6 +105,15 @@ const styles = StyleSheet.create({
   itemTextStyle: {
     fontSize: 16,
     color: "black"
+  },
+
+  avatar: {
+    width: 130,
+    height: 130,
+    borderRadius: 63,
+    borderWidth: 4,
+    borderColor: "white",
+    marginBottom: 10
   }
 });
 export default SideDrawer;
