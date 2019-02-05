@@ -13,6 +13,8 @@ import {
   View // Container component
 } from "react-native";
 
+import appStyle from '../../styles/styles';
+import Toolbar from '../../components/Toolbar';
 
 /************************** Action ************************/
 import * as LoginActions from '../../../actions/LoginAction';
@@ -101,24 +103,17 @@ class Login extends Component {
     this.props.navigation.navigate(ScreenConst.SCREENS.DASHBOARD)
   }
 
-
-
   render() {
-    console.log("This is " , global.getImage(global.ImageName.IMG_SPLASH))
-    return (
+    return(
       <View style={styles.container}>
+        <Toolbar headerText = 'Login'></Toolbar>
         <Loader loading={this.state.loading} />
         <SnackBar visible={this.state.showSnackbar} textMessage={this.state.snackMessage} actionHandler={()=>{this.setState({showSnackbar:false})}} actionText="ok"/>
-        <View behavior="padding" style={styles.container}>
-          <View style={styles.logoContainer}>
-            <Image style={styles.logo} source={global.getImage(global.ImageName.IMG_SPLASH)} /> 
-            <Text style={styles.subtext}>{this.state.message}</Text>
-          </View>
-          <KeyboardAvoidingView style={styles.keyboard}>
+        <KeyboardAvoidingView style={styles.keyboard}>
             <View style={styles.window}>
-              <TextInput style={styles.textInput}
+              <TextInput style={appStyle.textInputStyle}
                 placeholder="Username"
-                placeholderTextColor="rgba(255,255,255,0.7)"
+                placeholderTextColor="gray"
                 returnKeyType="next"
                 onSubmitEditing={() => this.passwordInput.focus()}
                 keyboardType="email-address"
@@ -129,9 +124,9 @@ class Login extends Component {
               />
             </View>
             <View style={styles.window}>
-              <TextInput style={styles.textInput}
+              <TextInput style={appStyle.textInputStyle}
                 placeholder="Password"
-                placeholderTextColor="rgba(255,255,255,0.7)"
+                placeholderTextColor="gray"
                 returnKeyType="go"
                 secureTextEntry
                 ref={input => (this.passwordInput = input)}
@@ -139,41 +134,41 @@ class Login extends Component {
                 onChangeText={password => this.setState({ password })}
               />
             </View>
+
+        <TouchableOpacity style = {{alignSelf : 'flex-end'}}>
+          <Text
+            style={appStyle.linkStyle}
+            onPress={() => this.props.navigation.navigate("ForgetPassword")}
+            title="Forget Password" >
+            Forgot Password?
+          </Text>
+        </TouchableOpacity>
             <TouchableOpacity
-              style={styles.buttonContainer}
+              style={[appStyle.buttonStyle, {marginTop : 20}]}
               onPress={this.onLoginPress} 
                 
             >
-              <Text style={styles.buttonText}>LOGIN</Text>
+              <Text style={appStyle.buttonTextStyle}>LOGIN</Text>
             </TouchableOpacity>
           </KeyboardAvoidingView>
-        </View>
-        <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style = {{alignSelf : 'center'}}>
           <Text
-            style={styles.buttonText}
+            style={appStyle.linkStyle}
             onPress={() => this.props.navigation.navigate("Register")}
             title="Sign up"
           >
-            Sign up
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Text
-            style={styles.buttonText}
-            onPress={() => this.props.navigation.navigate("ForgetPassword")}
-            title="Forget Password" >
-            Forget Password
+            Don't have an account? Sign up
           </Text>
         </TouchableOpacity>
       </View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#16a085"
+    backgroundColor: 'white'
   },
   logoContainer: {
     alignItems: "center",
@@ -193,7 +188,6 @@ const styles = StyleSheet.create({
     opacity: 0.8
   },
   keyboard: {
-    margin: 20,
     padding: 20,
     alignSelf: "stretch"
   },

@@ -12,6 +12,9 @@ import {
   AsyncStorage
 } from "react-native";
 
+import appStyle from '../../styles/styles';
+import Toolbar from '../../components/Toolbar';
+
 /************************** Action ************************/
 import * as LoginActions from '../../../actions/LoginAction';
 
@@ -82,7 +85,7 @@ class Register extends Component {
   }
 
   render() {
-    return (
+    /* return (
       <View behavior="padding" style={styles.container}>
         <Loader loading={this.state.loading} />
         <View style={styles.logoContainer}>
@@ -143,18 +146,82 @@ class Register extends Component {
           <Text style={styles.buttonText}>Register</Text>
         </TouchableHighlight>
       </View>
-    );
+    ); */
+
+      return(
+    <View style={styles.container}>
+    <Toolbar headerText = 'Register'
+      isBackEnabled = {true}
+      navigation = {this.props.navigation}></Toolbar>
+
+<Loader loading={this.state.loading} />
+
+<View style = {styles.innerContainerStyle}>
+<KeyboardAvoidingView>
+          <TextInput
+            value={this.state.name}
+            onChangeText={name => this.setState({ name })}
+            style={[appStyle.textInputStyle, {marginBottom : 8}]}
+            placeholder="Name"
+            placeholderTextColor="gray"
+            returnKeyType="next"
+            onSubmitEditing={() => this.emailInput.focus()}
+          />
+          <TextInput
+            value={this.state.email}
+            onChangeText={email => this.setState({ email })}
+            style={[appStyle.textInputStyle, {marginBottom : 8}]}
+            placeholderTextColor="gray"
+            returnKeyType="next"
+            ref={input => (this.emailInput = input)}
+            onSubmitEditing={() => this.passwordCInput.focus()}
+            keyboardType="email-address"
+            autoCapitalize="none"
+            autoCorrect={false}
+            placeholder="Email"
+          />
+          <TextInput
+            value={this.state.password}
+            onChangeText={password => this.setState({ password })}
+            style={[appStyle.textInputStyle, {marginBottom : 8}]}
+            placeholder="Password"
+            secureTextEntry={true}
+            placeholderTextColor="gray"
+            ref={input => (this.passwordCInput = input)}
+            onSubmitEditing={() => this.passwordInput.focus()}
+            returnKeyType="next"
+            secureTextEntry
+          />
+          <TextInput
+            value={this.state.password}
+            onChangeText={password_confirmation => this.setState({ password_confirmation })}
+            style={[appStyle.textInputStyle, {marginBottom : 8}]}
+            placeholder="Confirm Password"
+            secureTextEntry={true}
+            placeholderTextColor="gray"
+            returnKeyType="go"
+            secureTextEntry
+            ref={input => (this.passwordInput = input)}
+          />
+        </KeyboardAvoidingView>
+        <TouchableHighlight
+          onPress={this.onRegisterPress.bind(this)}
+          style={[appStyle.buttonStyle, {marginTop : 20}]}
+        >
+          <Text style={appStyle.buttonTextStyle}>Register</Text>
+        </TouchableHighlight>
+</View>
+</View>)
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1.2,
-    justifyContent: "flex-start",
-    alignItems: "center",
-    backgroundColor: "#16a085",
-    padding: 20,
-    paddingTop: 100
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  innerContainerStyle: {
+    padding : 20,
   },
   logoContainer: {
     alignItems: "center",

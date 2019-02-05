@@ -41,13 +41,13 @@ const AppNavigator = StackNavigator({
   Register: {
     screen: Register,
     navigationOptions: {
-      title: "Register"
+      header: null
     }
   },
   ForgetPassword: {
     screen: ForgetPassword,
     navigationOptions: {
-      title: "ForgetPassword"
+      header: null
     }
   },
   Dashboard: {

@@ -9,6 +9,9 @@ import {
   TouchableOpacity
 } from "react-native";
 
+import appStyle from '../../styles/styles';
+import Toolbar from '../../components/Toolbar';
+
 export default class ForgetPassword extends Component {
   constructor() {
     super();
@@ -25,39 +28,45 @@ export default class ForgetPassword extends Component {
   };
 
   onForgetPress() {
-        this.props.navigation.navigate("Login");
+      this.props.navigation.navigate("Login");
   }
+  
   render() {
-    return (
+    return(
       <View style={styles.container}>
-        <TextInput
+        <Toolbar headerText = 'Forget Password'
+          isBackEnabled = {true}
+          navigation = {this.props.navigation}></Toolbar>
+
+<View style = {styles.innerContainerStyle}>
+        <TextInput style={appStyle.textInputStyle}
           placeholder="Username"
-          placeholderTextColor="rgba(255,255,255,0.7)"
+          placeholderTextColor="gray"
           keyboardType="email-address"
           autoCapitalize="none"
           autoCorrect={false}
-          style={styles.input}
           value={this.state.email}
           onChangeText={email => this.setState({ email })}
         />
         <TouchableOpacity
-          style={styles.buttonContainer}
+          style={[appStyle.buttonStyle, {marginTop : 20}]}
           onPress={this.onForgetPress.bind(this)}
         >
-          <Text style={styles.buttonText}>Forget Password</Text>
+          <Text style={appStyle.buttonTextStyle}>Reset Password</Text>
         </TouchableOpacity>
+        </View>
       </View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1.2,
-    justifyContent: "flex-start",
-    backgroundColor: "#16a085",
-    padding: 20,
-    paddingTop: 100
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  innerContainerStyle: {
+    padding : 20,
   },
   input: {
     height: 40,
