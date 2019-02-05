@@ -9,15 +9,15 @@ import {
   TouchableOpacity
 } from "react-native";
 
-import appStyle from '../../styles/styles';
-import Toolbar from '../../components/Toolbar';
+import appStyle from "../../styles/styles";
+import Toolbar from "../../components/Toolbar";
 
 export default class ForgetPassword extends Component {
   constructor() {
     super();
     this.state = {
       email: "",
-      password: "",
+      password: ""
     };
   }
   static navigationOptions = {
@@ -28,45 +28,48 @@ export default class ForgetPassword extends Component {
   };
 
   onForgetPress() {
-      this.props.navigation.navigate("Login");
+    this.props.navigation.navigate("Login");
   }
-  
-  render() {
-    return(
-      <View style={styles.container}>
-        <Toolbar headerText = 'Forget Password'
-          isBackEnabled = {true}
-          navigation = {this.props.navigation}></Toolbar>
 
-<View style = {styles.innerContainerStyle}>
-        <TextInput style={appStyle.textInputStyle}
-          placeholder="Username"
-          placeholderTextColor="gray"
-          keyboardType="email-address"
-          autoCapitalize="none"
-          autoCorrect={false}
-          value={this.state.email}
-          onChangeText={email => this.setState({ email })}
+  render() {
+    return (
+      <View style={styles.container}>
+        <Toolbar
+          headerText="Forget Password"
+          isBackEnabled={true}
+          navigation={this.props.navigation}
         />
-        <TouchableOpacity
-          style={[appStyle.buttonStyle, {marginTop : 20}]}
-          onPress={this.onForgetPress.bind(this)}
-        >
-          <Text style={appStyle.buttonTextStyle}>Reset Password</Text>
-        </TouchableOpacity>
+
+        <View style={styles.innerContainerStyle}>
+          <TextInput
+            style={appStyle.textInputStyle}
+            placeholder="Username"
+            placeholderTextColor="gray"
+            keyboardType="email-address"
+            autoCapitalize="none"
+            autoCorrect={false}
+            value={this.state.email}
+            onChangeText={email => this.setState({ email })}
+          />
+          <TouchableOpacity
+            style={[appStyle.buttonStyle, { marginTop: 20 }]}
+            onPress={this.onForgetPress.bind(this)}
+          >
+            <Text style={appStyle.buttonTextStyle}>Reset Password</Text>
+          </TouchableOpacity>
         </View>
       </View>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: "white"
   },
   innerContainerStyle: {
-    padding : 20,
+    padding: 20
   },
   input: {
     height: 40,
@@ -83,5 +86,5 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#FFF",
     fontWeight: "700"
-  },
+  }
 });

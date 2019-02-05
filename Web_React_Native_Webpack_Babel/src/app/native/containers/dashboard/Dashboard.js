@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import { View, StyleSheet, Dimensions } from 'react-native';
+import React, { Component } from "react";
+import { View, StyleSheet, Dimensions } from "react-native";
 
-import appStyle from '../../styles/styles';
-import HelloWorld from '../../components/HelloWorld';
+import appStyle from "../../styles/styles";
+import HelloWorld from "../../components/HelloWorld";
 
-import Toolbar from '../../components/ToolbarWithMenu';
-import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
-import { Container, Header, Content, Tab, Tabs } from 'native-base';
-import Holder from '../../components/HolderComponent'
+import Toolbar from "../../components/ToolbarWithMenu";
+import { TabView, TabBar, SceneMap } from "react-native-tab-view";
+import { Container, Header, Content, Tab, Tabs } from "native-base";
+import Holder from "../../components/HolderComponent";
 
 /************************** Redux************************/
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 /********************************************************/
 
 const FirstRoute = () => (
-  <View style={[styles.scene, { backgroundColor: '#ff4081' }]} />
+  <View style={[styles.scene, { backgroundColor: "#ff4081" }]} />
 );
 const SecondRoute = () => (
-  <View style={[styles.scene, { backgroundColor: '#673ab7' }]} />
+  <View style={[styles.scene, { backgroundColor: "#673ab7" }]} />
 );
 
 class Dashboard extends Component {
@@ -27,20 +27,17 @@ class Dashboard extends Component {
     this.state = {
       index: 0,
       routes: [
-        { key: 'first', title: 'First' },
-        { key: 'second', title: 'Second' },
-      ],
+        { key: "first", title: "First" },
+        { key: "second", title: "Second" }
+      ]
     };
   }
 
   componentDidMount() {
-    this.interval = setInterval(
-      () => {
-        clearInterval(this.interval);
-        this.props.navigation.navigate('Home');
-      },
-      1000
-    );
+    this.interval = setInterval(() => {
+      clearInterval(this.interval);
+      this.props.navigation.navigate("Home");
+    }, 1000);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -51,14 +48,13 @@ class Dashboard extends Component {
     console.log(this.props);
   }
 
-
   render() {
     return (
-        <Container>
-        <Toolbar headerText = 'Dashboard'></Toolbar>
+      <Container>
+        <Toolbar headerText="Dashboard" />
         <Tabs>
           <Tab heading="Tab1">
-          <Holder />
+            <Holder />
           </Tab>
           <Tab heading="Tab2">
             <Holder />
@@ -68,28 +64,27 @@ class Dashboard extends Component {
           </Tab>
         </Tabs>
       </Container>
-
     );
   }
 }
 
 const styles = StyleSheet.create({
   scene: {
-    flex: 1,
-  },
+    flex: 1
+  }
 });
 
 const mapStateToProps = state => {
-  console.log('login new mapStateToProps', state);
+  console.log("login new mapStateToProps", state);
   return state;
-}
+};
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    
-  };
-}
+const mapDispatchToProps = dispatch => {
+  return {};
+};
 
 // Wrap the component to inject dispatch and state into it
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
-
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Dashboard);
