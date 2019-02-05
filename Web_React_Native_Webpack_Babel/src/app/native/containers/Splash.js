@@ -12,7 +12,7 @@ class Splash extends Component {
     this.interval = setInterval(
       () => {
         clearInterval(this.interval);
-        this.props.navigation.navigate('LoginHome');
+        this.props.navigation.replace('LoginHome');
       },
       500
     );

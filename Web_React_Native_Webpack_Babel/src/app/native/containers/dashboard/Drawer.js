@@ -6,7 +6,7 @@ const Drawer = DrawerNavigator({
     Home:Dashboard
   },{
      contentComponent:SideDrawer,
-     drawerWidth: 330
+     drawerWidth: 250
   });
 
   export default Drawer;

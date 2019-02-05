@@ -53,7 +53,7 @@ const AppNavigator = StackNavigator({
   Dashboard: {
     screen: Drawer,
     navigationOptions: {
-      title: "Dashbaord"
+      header: null
     }
   }, FilePicker: {
     screen: FilePicker,

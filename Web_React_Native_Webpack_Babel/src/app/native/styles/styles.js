@@ -49,6 +49,7 @@ export default appStyle = StyleSheet.create({
   linkStyle : {
     color : 'black',
     fontSize : 12,
+    textDecorationLine : 'underline'
   }
 
 });

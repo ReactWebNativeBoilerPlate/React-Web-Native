@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 
-import { appStyle } from '../../styles/styles';
+import appStyle from '../../styles/styles';
 import HelloWorld from '../../components/HelloWorld';
+
+import Toolbar from '../../components/ToolbarWithMenu';
 
 /************************** Redux************************/
 import { connect } from 'react-redux';
@@ -33,12 +35,9 @@ class Dashboard extends Component {
 
 
   render() {
-
-  
-
     return (
-      <View style={appStyle.reactNativeWeb}>
-      
+      <View>
+        <Toolbar headerText = 'Dashboard'></Toolbar> 
       </View>
 
     );

@@ -100,7 +100,7 @@ class Login extends Component {
      // this.props.LoginActions.doLogin(payload);
     
     //}
-    this.props.navigation.navigate(ScreenConst.SCREENS.DASHBOARD)
+    this.props.navigation.replace(ScreenConst.SCREENS.DASHBOARD)
   }
 
   render() {

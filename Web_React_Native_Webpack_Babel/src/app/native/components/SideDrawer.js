@@ -30,12 +30,10 @@ class SideDrawer extends Component {
             <Container>
                 <Content>
                     <Image
-                        source={{
-                            uri: "https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/drawer-cover.png"
-                        }}
+                        source={require('../../images/avatar.png')}
                         style={{
                             height: 120,
-                            alignSelf: "stretch",
+                            alignSelf: "center",
                             justifyContent: "center",
                             alignItems: "center"
                         }}>
@@ -76,8 +74,7 @@ class SideDrawer extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        padding: 20,
+        padding: 8,
     },
 
     itemTextStyle: {
