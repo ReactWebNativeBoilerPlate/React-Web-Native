@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity, Image, StyleSheet, Text } from "react-native";
-import launchCamera from "../../utils/CameraPickerUtil";
+import launchImagePicker from "../../utils/ImagePickerUtils";
 import appStyles from '../styles/styles'
 import Toolbar from "./Toolbar";
 
-export default class FilePicker extends Component {
+export default class ImagePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,19 +15,21 @@ export default class FilePicker extends Component {
     return (
       <View style={styles.containerStyle}>
         <Toolbar
-          headerText="Camera"
+          headerText="Select Image"
           isBackEnabled={true}
           navigation={this.props.navigation}
         />
-        <Image style={styles.imageStyle} source={this.state.avatarSource} />
+        <Image style={styles.imageStyle}
+         source={this.state.avatarSource}
+         defaultSource = {require('../../images/ic_upload.png')} />
 
         <TouchableOpacity
           style={appStyles.buttonStyle}
           onPress={() =>
-            launchCamera(this.onResult, this.onCancel, this.OnError)
+            launchImagePicker(this.onResult, this.onCancel, this.OnError)
           }
         >
-          <Text style={appStyles.buttonTextStyle}>Take Picture</Text>
+          <Text style={appStyles.buttonTextStyle}>Load Image</Text>
         </TouchableOpacity>
       </View>
     );
@@ -49,6 +51,7 @@ export default class FilePicker extends Component {
 const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
+    alignItems : 'center',
   },
 
   buttonStyle: {
@@ -65,8 +68,9 @@ const styles = StyleSheet.create({
   },
 
   imageStyle: {
-    width: 250,
-    height: 250,
-    color: "black"
+    width: '90%',
+    height: '60%',
+    marginBottom : 20,
+    resizeMode : 'contain',
   }
 });

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, StyleSheet, Dimensions } from "react-native";
 
-import appStyle from "../../styles/styles";
+import appTheme from "../../styles/theme.style";
 import HelloWorld from "../../components/HelloWorld";
 
 import Toolbar from "../../components/ToolbarWithMenu";
@@ -40,14 +40,34 @@ class Dashboard extends Component {
     return (
       <Container>
         <Toolbar headerText="Dashboard" navigation={this.props.navigation} />
-        <Tabs>
-          <Tab heading="Tab1">
+        <Tabs
+          tabBarUnderlineStyle={{ backgroundColor: appTheme.PRIMARY_COLOR }}
+        >
+          <Tab
+            heading="Tab1"
+            tabStyle={{ backgroundColor: "#F8F8F8" }}
+            textStyle={{ color: "#000" }}
+            activeTabStyle={{ backgroundColor: "#F8F8F8" }}
+            activeTextStyle={{ color: "#000", fontWeight: "normal" }}
+          >
             <Holder />
           </Tab>
-          <Tab heading="Tab2">
+          <Tab
+            heading="Tab2"
+            tabStyle={{ backgroundColor: "#F8F8F8" }}
+            textStyle={{ color: "#000" }}
+            activeTabStyle={{ backgroundColor: "#F8F8F8" }}
+            activeTextStyle={{ color: "#000", fontWeight: "normal" }}
+          >
             <Holder />
           </Tab>
-          <Tab heading="Tab3">
+          <Tab
+            heading="Tab3"
+            tabStyle={{ backgroundColor: "#F8F8F8" }}
+            textStyle={{ color: "#000" }}
+            activeTabStyle={{ backgroundColor: "#F8F8F8" }}
+            activeTextStyle={{ color: "#000", fontWeight: "normal" }}
+          >
             <Holder />
           </Tab>
         </Tabs>

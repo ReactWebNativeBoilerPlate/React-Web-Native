@@ -14,7 +14,8 @@ export default (appStyle = StyleSheet.create({
     flexDirection: "row",
     paddingLeft: 16,
     paddingRight: 16,
-    height: 48
+    height: 48,
+    width : '100%',
   },
 
   toolbarTextStyle: {

@@ -16,7 +16,7 @@ import Register from "../containers/login/Register";
 import LoginHome from "../containers/login/index"
 
 import FilePicker from '../components/FilePicker';
-import CameraView from '../components/CameraView';
+import CameraView from '../components/ImagePickerView';
 import MapView from '../components/MapView'
 import ChartView from '../components/ChartView'
 

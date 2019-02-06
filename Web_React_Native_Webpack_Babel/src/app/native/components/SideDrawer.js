@@ -54,7 +54,7 @@ class SideDrawer extends Component {
                     source={require("../../images/ic_camera.png")}
                     style={{ width: 24, height: 24, marginRight: 8 }}
                   />
-                  <Text style={styles.itemTextStyle}>Camera</Text>
+                  <Text style={styles.itemTextStyle}>Image Picker</Text>
                 </View>
               </TouchableOpacity>
             </ListItem>
