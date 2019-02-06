@@ -7,14 +7,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Card, CardBody, CardGroup, Col, Container, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import { Card, CardBody, CardGroup, Col, Container, InputGroup, Row } from 'reactstrap';
 import Form from 'react-validation/build/form';
-import Input from 'react-validation/build/input';
 import Validator from '../../../utils/validations';
 import { bindActionCreators } from 'redux';
 import * as loginActions from '../../../actions/LoginAction';
 import { Helmet } from 'react-helmet';
-import { toast } from 'react-toastify';
 
 
 import Snackbar from '@material-ui/core/Snackbar';

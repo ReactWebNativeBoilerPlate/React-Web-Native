@@ -7,13 +7,6 @@
 import React, { Component } from 'react';
 import Dashboard from './Dashboard';
 
-import {
-
-    Col,
-    Container,
-    Row
-} from 'reactstrap';
-
 class HomePage extends Component {
 
     constructor(props) {

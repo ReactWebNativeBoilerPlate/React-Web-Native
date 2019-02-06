@@ -5,7 +5,6 @@ import SnackBar from "react-native-snackbar-component";
 import {
   KeyboardAvoidingView,
   TouchableOpacity,
-  Image,
   TextInput,
   StyleSheet, // CSS-like styles
   Text, // Renders text

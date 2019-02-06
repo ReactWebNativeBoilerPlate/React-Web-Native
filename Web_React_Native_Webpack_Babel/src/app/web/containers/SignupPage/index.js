@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import {
     Card, CardBody, Col, Container,
-    InputGroup, InputGroupAddon, InputGroupText, Row, Jumbotron
+    InputGroup, Row, Jumbotron
 } from 'reactstrap';
 import Form from 'react-validation/build/form';
-import Input from 'react-validation/build/input';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import ReactPasswordStrength from 'react-password-strength';
 import './style.css';
 import { Link } from 'react-router-dom';
 import _get from 'lodash/get';

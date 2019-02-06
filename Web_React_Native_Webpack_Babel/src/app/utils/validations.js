@@ -3,7 +3,7 @@ import validator from 'validator';
 import React from 'react';
 import _get from 'lodash/get';
 
-const required = (value,props) => {
+const required = (value) => {
   if (!value.toString().trim().length) {
     // We can return string or jsx as the 'error' prop for the validated Component
     return <span className="validation-help-block">Above field is required.</span>;

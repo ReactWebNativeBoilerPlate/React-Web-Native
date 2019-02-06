@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 import Loader from "../../components/loader";
 import {
-  AppRegistry,
   StyleSheet,
   Text,
   View,
   TextInput,
   TouchableHighlight,
-  Image,
   KeyboardAvoidingView,
-  AsyncStorage
 } from "react-native";
 
 import appStyle from "../../styles/styles";

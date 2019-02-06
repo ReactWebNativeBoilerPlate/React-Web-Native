@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import { View, StyleSheet, Dimensions } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 import appTheme from "../../styles/theme.style";
-import HelloWorld from "../../components/HelloWorld";
 
 import Toolbar from "../../components/ToolbarWithMenu";
-import { Container, Header, Content, Tab, Tabs } from "native-base";
+import { Container, Tab, Tabs } from "native-base";
 import Holder from "../../components/HolderComponent";
 
 /************************** Redux************************/
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 /********************************************************/
 
 const FirstRoute = () => (

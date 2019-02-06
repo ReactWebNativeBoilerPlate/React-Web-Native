@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import appStyle from "../styles/styles";
 
-export default (Toolbar = props => {
+export default (props => {
   return (
     <View style={appStyle.toolbarStyle}>
       <TouchableOpacity onPress={() => {props.navigation.toggleDrawer();}}>
@@ -16,6 +16,3 @@ export default (Toolbar = props => {
   );
 });
 
-const styles = {
-  containerStyle: {}
-};

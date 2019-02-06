@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Card, CardBody, CardFooter, Col, Container, InputGroup, InputGroupAddon, InputGroupText, Row, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Button, Card, CardBody, Col, Container, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
 import Validator from '../../utils/validations';
@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import ReactPasswordStrength from 'react-password-strength';
 import './style.css';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 
@@ -119,9 +118,7 @@ class ProfilePage extends Component {
 
     render() {
 
-        const { practiceListResponse, profileData } = this.props;
         console.log(this.props, "Props");
-        const practiceListData = practiceListResponse ? practiceListResponse : [];
 
         const inputProps = {
             placeholder: "Password",
