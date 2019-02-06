@@ -5,18 +5,18 @@ import {
 } from 'reactstrap';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import ReactPasswordStrength from 'react-password-strength';
-import './style.css'
-import { Link } from 'react-router-dom'
-import _get from 'lodash/get'
+import './style.css';
+import { Link } from 'react-router-dom';
+import _get from 'lodash/get';
 import {
     AppFooter,
     AppHeader
 } from '@coreui/react';
-import { Helmet } from 'react-helmet'
-import Validator from '../../../utils/validations'
+import { Helmet } from 'react-helmet';
+import Validator from '../../../utils/validations';
 import * as loginActions from '../../../actions/LoginAction';
 import DefaultFooter from '../../components/DefaultFooter';
 import LoginHeader from '../../components/LoginHeader';
@@ -44,9 +44,9 @@ class SignupPage extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.form.validateAll()
-        this.setState({ isValidated: true })
-        console.log(this.form)
+        this.form.validateAll();
+        this.setState({ isValidated: true });
+        console.log(this.form);
         if (this.state.password != this.state.confirmPassword) {
             return;
         }
@@ -70,7 +70,7 @@ class SignupPage extends Component {
     handleChange(e) {
         this.setState({
             [e.target.name]: e.target.value
-        })
+        });
     }
 
 
@@ -93,7 +93,7 @@ class SignupPage extends Component {
 
     changeValue(prac_id, prac_name) {
         //console.log(e.currentTarget)
-        this.setState({ value: prac_name, pmsId: prac_id })
+        this.setState({ value: prac_name, pmsId: prac_id });
     }
 
     render() {
@@ -115,7 +115,7 @@ class SignupPage extends Component {
         console.log(this.props.registerUserResponse, "Data");
 
         const { isUserRegistered, registerUserResponse } = this.props;
-        console.log(this.props, "Props")
+        console.log(this.props, "Props");
 
         console.log("**** Rendering Signup page *******");
         return (
@@ -149,7 +149,7 @@ class SignupPage extends Component {
                                                     <h1>Register</h1>
                                                     <p >Create your account</p>
 
-                                                    <Form ref={c => { this.form = c }} onSubmit={this.handleSubmit.bind(this)}>
+                                                    <Form ref={c => { this.form = c; }} onSubmit={this.handleSubmit.bind(this)}>
                                                         <Row>
                                                             <Col md="5">
                                                                 <InputGroup className="mb-4">
@@ -262,7 +262,7 @@ function mapStateToProps(state) {
     return {
         registerUserResponse: state.loginReducer.signupResponse,
         isUserRegistered: state.loginReducer.isSignupSuccess
-    }
+    };
 }
 
 function mapDispatchToProps(dispatch) {
@@ -272,4 +272,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignupPage)
+export default connect(mapStateToProps, mapDispatchToProps)(SignupPage);

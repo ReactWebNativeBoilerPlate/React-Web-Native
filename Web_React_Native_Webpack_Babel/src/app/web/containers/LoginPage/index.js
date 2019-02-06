@@ -17,23 +17,23 @@ import Center from 'react-center';
 
 import Button from '@material-ui/core/Button';
 import '../../css/custom.css';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 
 
-import * as loginActions from '../../../actions/LoginAction'
+import * as loginActions from '../../../actions/LoginAction';
 
 class LoginPage extends Component {
 
 
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       email: "",
       password: "",
@@ -42,7 +42,7 @@ class LoginPage extends Component {
     };
   }
   componentWillMount() {
-    console.log('componentWillMount props loginResponse: ', this.props.loginResponse)
+    console.log('componentWillMount props loginResponse: ', this.props.loginResponse);
   }
 
 
@@ -63,7 +63,7 @@ class LoginPage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.isLoggedIn) {
-      this.props.history.push('/home')
+      this.props.history.push('/home');
     } else
       if (nextProps.loginResponse) {
         this.setState({ statusMessage: nextProps.loginResponse.message });
@@ -74,11 +74,11 @@ class LoginPage extends Component {
 
   handleChange(event) {
 
-    const target = event.target
+    const target = event.target;
 
-    const value = target.type === 'checkbox' ? target.checked : target.value
+    const value = target.type === 'checkbox' ? target.checked : target.value;
 
-    const name = target.name
+    const name = target.name;
 
     this.setState({ [name]: value });
 
@@ -105,9 +105,9 @@ class LoginPage extends Component {
 
     };
 
-    console.log('************ Rendering login **********************')
+    console.log('************ Rendering login **********************');
     let { loginResponse, isLoggedIn } = this.props;
-    console.log('render props loginResponse: ', loginResponse, isLoggedIn)
+    console.log('render props loginResponse: ', loginResponse, isLoggedIn);
     return (
       <div style={style.bg}>
         <Center>
@@ -186,7 +186,7 @@ function mapStateToProps(state) {
   return {
     loginResponse: state.loginReducer.loginResponse,
     isLoggedIn: state.loginReducer.isLoggedIn
-  }
+  };
 }
 
 function mapDispatchToProps(dispatch) {
@@ -195,4 +195,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginPage)
+export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);

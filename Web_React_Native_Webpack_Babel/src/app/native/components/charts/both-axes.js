@@ -1,16 +1,16 @@
-import React from 'react'
-import { Grid, LineChart, XAxis, YAxis } from 'react-native-svg-charts'
-import { View } from 'react-native'
+import React from 'react';
+import { Grid, LineChart, XAxis, YAxis } from 'react-native-svg-charts';
+import { View } from 'react-native';
 
 class AxesExample extends React.PureComponent {
 
     render() {
 
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
+        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ];
 
         const axesSvg = { fontSize: 10, fill: 'grey' };
-        const verticalContentInset = { top: 10, bottom: 10 }
-        const xAxisHeight = 30
+        const verticalContentInset = { top: 10, bottom: 10 };
+        const xAxisHeight = 30;
 
         // Layout of an x-axis together with a y-axis is a problem that stems from flexbox.
         // All react-native-svg-charts components support full flexbox and therefore all
@@ -44,9 +44,9 @@ class AxesExample extends React.PureComponent {
                     />
                 </View>
             </View>
-        )
+        );
     }
 
 }
 
-export default AxesExample
+export default AxesExample;

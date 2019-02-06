@@ -7,16 +7,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
-import HomePage from './HomePage/index'
+import HomePage from './HomePage/index';
 // import { ProfilePage } from '../App/web/containers/ProfilePage/index'
-import ForgetPassword from '../containers/ForgotPassword/component'
-import ResetPassword from './ResetPassword/index'
-import SignupPage from './SignupPage/index'
-import LoginPage from './LoginPage/index'
+import ForgetPassword from '../containers/ForgotPassword/component';
+import ResetPassword from './ResetPassword/index';
+import SignupPage from './SignupPage/index';
+import LoginPage from './LoginPage/index';
 
 export default class Root extends Component {
   render() {
-    console.log("Rendering webpage ")
+    console.log("Rendering webpage ");
     return (
       <Provider store={this.props.store} >
         <Router>

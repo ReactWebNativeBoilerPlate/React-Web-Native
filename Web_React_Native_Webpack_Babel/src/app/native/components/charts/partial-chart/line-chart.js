@@ -1,14 +1,14 @@
-import React from 'react'
-import { ClipPath, Defs, Rect } from 'react-native-svg'
-import { LineChart, Path } from 'react-native-svg-charts'
+import React from 'react';
+import { ClipPath, Defs, Rect } from 'react-native-svg';
+import { LineChart, Path } from 'react-native-svg-charts';
 
 class PartialLineChartExample extends React.PureComponent {
 
     render() {
 
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
+        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ];
 
-        const indexToClipFrom = 10
+        const indexToClipFrom = 10;
 
         const Clips = ({ x, width }) => (
             <Defs key={ 'clips' }>
@@ -19,7 +19,7 @@ class PartialLineChartExample extends React.PureComponent {
                     <Rect x={ x(indexToClipFrom) } y={ '0' } width={ width - x(indexToClipFrom) } height={ '100%' }/>
                 </ClipPath>
             </Defs>
-        )
+        );
 
         // Line extras:
         const DashedLine = ({ line }) => (
@@ -32,7 +32,7 @@ class PartialLineChartExample extends React.PureComponent {
                 strokeDasharray={ [ 4, 4 ] }
                 clipPath={ 'url(#clip-path-2)' }
             />
-        )
+        );
 
         const Shadow = ({ line }) => (
             <Path
@@ -43,7 +43,7 @@ class PartialLineChartExample extends React.PureComponent {
                 strokeWidth={ 5 }
                 fill={ 'none' }
             />
-        )
+        );
 
         return (
             <LineChart
@@ -60,8 +60,8 @@ class PartialLineChartExample extends React.PureComponent {
                 <Shadow/>
                 <DashedLine/>
             </LineChart>
-        )
+        );
     }
 }
 
-export default PartialLineChartExample
+export default PartialLineChartExample;

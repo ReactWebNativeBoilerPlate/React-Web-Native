@@ -4,16 +4,16 @@
  * This is the page we show when the user visits login url
  */
 
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { Card, CardBody, CardGroup, Col, Container, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { Card, CardBody, CardGroup, Col, Container, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
-import Validator from '../../../utils/validations'
-import { bindActionCreators } from 'redux'
-import * as loginActions from '../../../actions/LoginAction'
-import { Helmet } from 'react-helmet'
+import Validator from '../../../utils/validations';
+import { bindActionCreators } from 'redux';
+import * as loginActions from '../../../actions/LoginAction';
+import { Helmet } from 'react-helmet';
 import { toast } from 'react-toastify';
 
 
@@ -32,7 +32,7 @@ import TextField from 'material-ui/TextField';
 class ForgotPassword extends Component {
 
     constructor(props) {
-        super(props)
+        super(props);
         console.log(" In forget password page");
         this.state = {
             email: "",
@@ -42,9 +42,9 @@ class ForgotPassword extends Component {
     }
 
     handleChange(event) {
-        const target = event.target
-        const value = target.type === 'checkbox' ? target.checked : target.value
-        const name = target.name
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
         this.setState({ [name]: value });
     }
 
@@ -57,14 +57,14 @@ class ForgotPassword extends Component {
     }
 
     componentWillMount() {
-        console.log('componentWillMount props loginResponse: ', this.props.loginResponse)
+        console.log('componentWillMount props loginResponse: ', this.props.loginResponse);
     }
 
     handleSubmit(event) {
-        event.preventDefault()
-        this.form.validateAll()
+        event.preventDefault();
+        this.form.validateAll();
         if (!Validator.hasError(this.form)) {
-            this.props.actions.forgotPassword({ email: this.state.email })
+            this.props.actions.forgotPassword({ email: this.state.email });
         }
 
     }
@@ -86,7 +86,7 @@ class ForgotPassword extends Component {
                                         <CardBody>
                                             <h1>Forgot Password</h1>
                                             <p className="text-muted">Please enter you registered email Address. If email exists in our records, a Reset Password link will be sent to your email</p>
-                                            <Form ref={c => { this.form = c }}>
+                                            <Form ref={c => { this.form = c; }}>
                                                 <InputGroup className="mb-4">
 
                                                     <TextField type="text" name="email" placeholder="Email" id="email" value={this.state.email} onChange={(e) => this.handleChange(e)} validations={[Validator.required, Validator.email]} />
@@ -144,7 +144,7 @@ class ForgotPassword extends Component {
                     ]}
                 />
             </div>
-        )
+        );
     }
 }
 
@@ -153,13 +153,13 @@ function mapStateToProps(state) {
     return {
         forgotStatus: state.loginReducer.forgotStatus,
         forgetPassword: state.loginReducer.forgetPassword
-    }
+    };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(loginActions, dispatch)
-    }
+    };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ForgotPassword)
+export default connect(mapStateToProps, mapDispatchToProps)(ForgotPassword);

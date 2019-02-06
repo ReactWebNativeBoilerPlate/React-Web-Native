@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import { Button, Card, CardBody, CardFooter, Col, Container, InputGroup, InputGroupAddon, InputGroupText, Row, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
-import Validator from '../../utils/validations'
-import { connect } from 'react-redux'
+import Validator from '../../utils/validations';
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import ReactPasswordStrength from 'react-password-strength';
-import './style.css'
-import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import './style.css';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
-import * as loginActions from '../../actions/login'
-import * as practice from '../../actions/practice'
+import * as loginActions from '../../actions/login';
+import * as practice from '../../actions/practice';
 
 class ProfilePage extends Component {
     constructor(props) {
 
-        super(props)
+        super(props);
         this.state = {
             email: "",
             password: "",
@@ -29,7 +29,7 @@ class ProfilePage extends Component {
             pms_id: "",
             sub_id: "",
             confirmPassword:""
-        }
+        };
 
         this.toggle = this.toggle.bind(this);
         this.changeValue = this.changeValue.bind(this);
@@ -39,9 +39,9 @@ class ProfilePage extends Component {
         };
     }
     handleChange(event) {
-        const target = event.target
-        const value = target.type === 'checkbox' ? target.checked : target.value
-        const name = target.name
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
         this.setState({ [name]: value });
     }
 
@@ -49,7 +49,7 @@ class ProfilePage extends Component {
         this.props.practiceAction.fetchPracticeList();
         let data = {
             subId: sessionStorage.getItem('subId')
-        }
+        };
         this.props.actions.getUserProfileData(data);
     }
 
@@ -58,7 +58,7 @@ class ProfilePage extends Component {
         if(nextProps.profileData){
             console.log(nextProps.profileData);
             delete nextProps.profileData.password;
-            this.setState(nextProps.profileData)
+            this.setState(nextProps.profileData);
         }
 
         if(nextProps.passwordUpdateData){
@@ -69,7 +69,7 @@ class ProfilePage extends Component {
     }
 
     toggle() {
-        console.log("data")
+        console.log("data");
         this.setState(prevState => ({
             dropdownOpen: !prevState.dropdownOpen
         }));
@@ -79,14 +79,14 @@ class ProfilePage extends Component {
         this.setState({ passLength: state.password.length, password:state.password })
 
     changeValue(e) {
-        this.setState({ value: e.currentTarget.textContent})
+        this.setState({ value: e.currentTarget.textContent});
     }
 
 
 
     handleSubmit(event) {
         event.preventDefault();
-        this.form.validateAll()
+        this.form.validateAll();
         if (!Validator.hasError(this.form)){
             this.props.actions.updateProfileData(
                 {
@@ -104,7 +104,7 @@ class ProfilePage extends Component {
 
     handleSubmitPassword(event) {
         event.preventDefault();
-        this.passwordForm.validateAll()
+        this.passwordForm.validateAll();
         if (!Validator.hasError(this.passwordForm)){
             this.props.actions.updateUserPassword(
                 {
@@ -120,7 +120,7 @@ class ProfilePage extends Component {
     render() {
 
         const { practiceListResponse, profileData } = this.props;
-        console.log(this.props, "Props")
+        console.log(this.props, "Props");
         const practiceListData = practiceListResponse ? practiceListResponse : [];
 
         const inputProps = {
@@ -173,7 +173,7 @@ class ProfilePage extends Component {
                                         </Col>
                                     </Row>
                                                                 */}
-                                    <Form ref={c => { this.form = c }} >
+                                    <Form ref={c => { this.form = c; }} >
                                     <Row>
                                         <Col className="labelStyle" md="6">
                                             1. Organization Details
@@ -263,7 +263,7 @@ class ProfilePage extends Component {
                                         </Col>
                                     </Row>
                                     </Form>
-                                    <Form ref={c => { this.passwordForm = c }}>
+                                    <Form ref={c => { this.passwordForm = c; }}>
                                     <Row>
                                         <Col className="labelStyle" md="6">
                                             3. Reset Password
@@ -341,7 +341,7 @@ function mapStateToProps(state) {
         practiceListResponse: state.practiceReducerHandler.practiceList,
         profileData: state.loginReducerHandler.profileData,
         passwordUpdateData : state.loginReducerHandler.passwordUpdate
-    }
+    };
 }
 
 function mapDispatchToProps(dispatch) {
@@ -351,4 +351,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProfilePage)
+export default connect(mapStateToProps, mapDispatchToProps)(ProfilePage);

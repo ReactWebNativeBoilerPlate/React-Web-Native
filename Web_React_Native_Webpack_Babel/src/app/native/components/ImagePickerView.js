@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity, Image, StyleSheet, Text } from "react-native";
 import launchImagePicker from "../../utils/ImagePickerUtils";
-import appStyles from '../styles/styles'
+import appStyles from '../styles/styles';
 import Toolbar from "./Toolbar";
 
 export default class ImagePicker extends Component {

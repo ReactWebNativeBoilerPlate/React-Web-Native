@@ -1,7 +1,7 @@
-import React from 'react'
-import { StackedAreaChart, YAxis, Grid } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
-import { View } from 'react-native'
+import React from 'react';
+import { StackedAreaChart, YAxis, Grid } from 'react-native-svg-charts';
+import * as shape from 'd3-shape';
+import { View } from 'react-native';
 
 class AreaStackWithAxisExample extends React.PureComponent {
 
@@ -36,10 +36,10 @@ class AreaStackWithAxisExample extends React.PureComponent {
                 cherries: 640,
                 dates: 400,
             },
-        ]
+        ];
 
-        const colors = [ 'rgb(138, 0, 230, 0.8)', 'rgb(173, 51, 255, 0.8)', 'rgb(194, 102, 255, 0.8)', 'rgb(214, 153, 255, 0.8)' ]
-        const keys   = [ 'apples', 'bananas', 'cherries', 'dates' ]
+        const colors = [ 'rgb(138, 0, 230, 0.8)', 'rgb(173, 51, 255, 0.8)', 'rgb(194, 102, 255, 0.8)', 'rgb(214, 153, 255, 0.8)' ];
+        const keys   = [ 'apples', 'bananas', 'cherries', 'dates' ];
 
         return (
             <View style={ { flexDirection: 'row', height: 200 } }>
@@ -67,8 +67,8 @@ class AreaStackWithAxisExample extends React.PureComponent {
                     } }
                 />
             </View>
-        )
+        );
     }
 }
 
-export default AreaStackWithAxisExample
+export default AreaStackWithAxisExample;

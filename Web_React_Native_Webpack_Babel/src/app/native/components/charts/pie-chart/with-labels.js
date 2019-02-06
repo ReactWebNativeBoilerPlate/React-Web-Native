@@ -1,14 +1,14 @@
-import React from 'react'
-import { PieChart } from 'react-native-svg-charts'
-import { Circle, G, Line } from 'react-native-svg'
+import React from 'react';
+import { PieChart } from 'react-native-svg-charts';
+import { Circle, G, Line } from 'react-native-svg';
 
 class PieChartWithLabelExample extends React.PureComponent {
 
     render() {
 
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91 ]
+        const data = [ 50, 10, 40, 95, -4, -24, 85, 91 ];
 
-        const randomColor = () => ('#' + (Math.random() * 0xFFFFFF << 0).toString(16) + '000000').slice(0, 7)
+        const randomColor = () => ('#' + (Math.random() * 0xFFFFFF << 0).toString(16) + '000000').slice(0, 7);
 
         const pieData = data
             .filter(value => value > 0)
@@ -16,7 +16,7 @@ class PieChartWithLabelExample extends React.PureComponent {
                 value,
                 svg: { fill: randomColor() },
                 key: `pie-${index}`,
-            }))
+            }));
 
         const Labels = ({ slices }) => {
             return slices.map((slice, index) => {
@@ -37,9 +37,9 @@ class PieChartWithLabelExample extends React.PureComponent {
                             fill={ data.svg.fill }
                         />
                     </G>
-                )
-            })
-        }
+                );
+            });
+        };
 
         return (
             <PieChart
@@ -51,9 +51,9 @@ class PieChartWithLabelExample extends React.PureComponent {
             >
                 <Labels/>
             </PieChart>
-        )
+        );
     }
 
 }
 
-export default PieChartWithLabelExample
+export default PieChartWithLabelExample;

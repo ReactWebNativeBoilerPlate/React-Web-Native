@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import openDocumentPicker from "../../utils/DocumentPicker";
 import Toolbar from "./Toolbar";
-import appStyles from '../styles/styles'
+import appStyles from '../styles/styles';
 
 export default class FilePicker extends Component {
   constructor(props) {

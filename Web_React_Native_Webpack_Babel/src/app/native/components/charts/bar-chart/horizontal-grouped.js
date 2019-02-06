@@ -1,8 +1,8 @@
-import React from 'react'
-import { View } from 'react-native'
-import { YAxis, BarChart, Grid } from 'react-native-svg-charts'
-import { Defs, Line, LinearGradient, Stop } from 'react-native-svg'
-import * as scale from 'd3-scale'
+import React from 'react';
+import { View } from 'react-native';
+import { YAxis, BarChart, Grid } from 'react-native-svg-charts';
+import { Defs, Line, LinearGradient, Stop } from 'react-native-svg';
+import * as scale from 'd3-scale';
 
 class BarChartExample extends React.PureComponent {
 
@@ -44,7 +44,7 @@ class BarChartExample extends React.PureComponent {
                     fill: 'green',
                 },
             },
-        ]
+        ];
 
         const Gradient = () => (
             <Defs key={'gradient'}>
@@ -53,7 +53,7 @@ class BarChartExample extends React.PureComponent {
                     <Stop offset={'100%'} stopColor={'rgb(66, 194, 244)'}/>
                 </LinearGradient>
             </Defs>
-        )
+        );
 
         return (
             <View style={{ flexDirection: 'row', height: 500, paddingVertical: 16 }}>
@@ -91,9 +91,9 @@ class BarChartExample extends React.PureComponent {
                     <Gradient/>
                 </BarChart>
             </View>
-        )
+        );
     }
 
 }
 
-export default BarChartExample
+export default BarChartExample;

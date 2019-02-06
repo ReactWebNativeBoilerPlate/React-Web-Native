@@ -1,9 +1,9 @@
-import React from 'react'
-import { AreaChart, XAxis, Grid } from 'react-native-svg-charts'
-import { View } from 'react-native'
-import * as scale from 'd3-scale'
-import * as shape from 'd3-shape'
-import dateFns from 'date-fns'
+import React from 'react';
+import { AreaChart, XAxis, Grid } from 'react-native-svg-charts';
+import { View } from 'react-native';
+import * as scale from 'd3-scale';
+import * as shape from 'd3-shape';
+import dateFns from 'date-fns';
 
 class XAxisScaleTimeExample extends React.PureComponent {
 
@@ -34,7 +34,7 @@ class XAxisScaleTimeExample extends React.PureComponent {
                 value: 20,
                 date: dateFns.setHours(new Date(2018, 0, 0), 24),
             },
-        ]
+        ];
 
         return (
             <View style={{ height: 200, padding: 20 }}>
@@ -68,9 +68,9 @@ class XAxisScaleTimeExample extends React.PureComponent {
                     formatLabel={ (value) => dateFns.format(value, 'HH:mm') }
                 />
             </View>
-        )
+        );
     }
 
 }
 
-export default XAxisScaleTimeExample
+export default XAxisScaleTimeExample;

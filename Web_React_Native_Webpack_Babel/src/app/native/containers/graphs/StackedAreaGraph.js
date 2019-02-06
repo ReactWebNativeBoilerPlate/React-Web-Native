@@ -1,6 +1,6 @@
-import React from 'react'
-import { StackedAreaChart } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
+import React from 'react';
+import { StackedAreaChart } from 'react-native-svg-charts';
+import * as shape from 'd3-shape';
 
 class StackedAreaGraph extends React.PureComponent {
 
@@ -35,16 +35,16 @@ class StackedAreaGraph extends React.PureComponent {
                 cherries: 640,
                 dates: 400,
             },
-        ]
+        ];
 
-        const colors = ['#8800cc', '#aa00ff', '#cc66ff', '#eeccff']
-        const keys = ['apples', 'bananas', 'cherries', 'dates']
+        const colors = ['#8800cc', '#aa00ff', '#cc66ff', '#eeccff'];
+        const keys = ['apples', 'bananas', 'cherries', 'dates'];
         const svgs = [
             { onPress: () => console.log('apples') },
             { onPress: () => console.log('bananas') },
             { onPress: () => console.log('cherries') },
             { onPress: () => console.log('dates') },
-        ]
+        ];
 
         return (
             <StackedAreaChart
@@ -56,6 +56,6 @@ class StackedAreaGraph extends React.PureComponent {
                 showGrid={false}
                 svgs={svgs}
             />
-        )
+        );
     }
 }

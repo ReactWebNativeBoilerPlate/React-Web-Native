@@ -1,12 +1,12 @@
-import React from 'react'
-import { View } from 'react-native'
-import { BarChart, Grid } from 'react-native-svg-charts'
+import React from 'react';
+import { View } from 'react-native';
+import { BarChart, Grid } from 'react-native-svg-charts';
 
 class BarChartExample extends React.PureComponent {
 
     render() {
 
-        const data = [ 50, 10, 40, 95, 85 ]
+        const data = [ 50, 10, 40, 95, 85 ];
 
         return (
             <View style={{ flexDirection: 'row', height: 200, paddingVertical: 16 }}>
@@ -22,9 +22,9 @@ class BarChartExample extends React.PureComponent {
                     <Grid direction={Grid.Direction.VERTICAL}/>
                 </BarChart>
             </View>
-        )
+        );
     }
 
 }
 
-export default BarChartExample
+export default BarChartExample;

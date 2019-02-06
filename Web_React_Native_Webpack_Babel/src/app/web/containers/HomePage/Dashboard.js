@@ -26,9 +26,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
 
-import SectionOne from '../SectionOne/SectionOne'
-import SectionTwo from '../SectionTwo/SectionTwo'
-import Tanble from '../SectionThree/Table'
+import SectionOne from '../SectionOne/SectionOne';
+import SectionTwo from '../SectionTwo/SectionTwo';
+import Tanble from '../SectionThree/Table';
 
 
 const drawerWidth = 240;

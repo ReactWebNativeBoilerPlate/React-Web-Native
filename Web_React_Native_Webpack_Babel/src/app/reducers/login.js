@@ -7,7 +7,7 @@ import {
   FORGOT_PASSWORD,
   UPDATE_PASSWORD
 }
-  from '../actions/LoginAction'
+  from '../actions/LoginAction';
 
 
 const initialState = {
@@ -23,33 +23,33 @@ export const loginReducer = (state = initialState, action) => {
         ...state,
         loginResponse: action.data,
         isLoggedIn: action.data.success
-      }
+      };
     case REQ_FAIL:
       return {
         ...state,
         reqFailed: action.data,
-      }
+      };
     case DO_SIGNUP_SUCCESS:
       return {
         ...state,
         signupResponse: action.data,
         isSignupSuccess: action.data.success
-      }
+      };
     case FORGOT_PASSWORD:
       return {
         ...state,
         forgetPassword: action.data,
         forgotStatus: action.data.success
-      }
+      };
     case UPDATE_PASSWORD:
       return {
         ...state,
         updatePassword: action.data,
         updateSuccess: action.data.success
-      }
+      };
     default:
-      return state
+      return state;
 
   }
 
-}
+};

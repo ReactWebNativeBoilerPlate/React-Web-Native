@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import { Button, Card, CardBody, CardFooter, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import ReactPasswordStrength from 'react-password-strength';
-import './style.css'
-import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import './style.css';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
-import * as loginActions from '../../../actions/LoginAction'
+import * as loginActions from '../../../actions/LoginAction';
 
 
 class ResetPassword extends Component {
     constructor(props) {
 
-        super(props)
+        super(props);
         this.state = {
             password: "",
             confirm: ""
-        }
+        };
 
         this.toggle = this.toggle.bind(this);
         this.changeValue = this.changeValue.bind(this);
@@ -28,9 +28,9 @@ class ResetPassword extends Component {
         };
     }
     handleChange(event) {
-        const target = event.target
-        const value = target.type === 'checkbox' ? target.checked : target.value
-        const name = target.name
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
         this.setState({ [name]: value });
     }
 
@@ -40,12 +40,12 @@ class ResetPassword extends Component {
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.passUpdateSuccess) {
-            this.props.history.push('/login')
+            this.props.history.push('/login');
         }
     }
 
     toggle() {
-        console.log("data")
+        console.log("data");
         this.setState(prevState => ({
             dropdownOpen: !prevState.dropdownOpen
         }));
@@ -55,7 +55,7 @@ class ResetPassword extends Component {
         this.setState({ passLength: state.password.length })
 
     changeValue(e) {
-        this.setState({ value: e.currentTarget.textContent })
+        this.setState({ value: e.currentTarget.textContent });
     }
 
 
@@ -74,7 +74,7 @@ class ResetPassword extends Component {
     render() {
 
         const { practiceListResponse, forgotStatus } = this.props;
-        console.log(this.props, "Props")
+        console.log(this.props, "Props");
         const practiceListData = practiceListResponse ? practiceListResponse : [];
 
         const inputProps = {
@@ -153,7 +153,7 @@ function mapStateToProps(state) {
 
         passUpdateSuccess: state.loginReducer.updateSuccess,
         passUpdateData: state.loginReducer.updatePassword,
-    }
+    };
 }
 
 
@@ -164,4 +164,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ResetPassword)
+export default connect(mapStateToProps, mapDispatchToProps)(ResetPassword);

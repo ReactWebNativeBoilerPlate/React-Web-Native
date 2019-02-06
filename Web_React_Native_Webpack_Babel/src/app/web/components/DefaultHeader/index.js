@@ -18,7 +18,7 @@ class DefaultHeader extends Component {
 
     logoutUser() {
         sessionStorage.clear();
-        window.location.href = "/login"
+        window.location.href = "/login";
         //this.props.history.push('/login')
     }
 

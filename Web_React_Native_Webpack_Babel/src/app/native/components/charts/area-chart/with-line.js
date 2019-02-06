@@ -1,13 +1,13 @@
-import React from 'react'
-import { Path } from 'react-native-svg'
-import { AreaChart, Grid } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
+import React from 'react';
+import { Path } from 'react-native-svg';
+import { AreaChart, Grid } from 'react-native-svg-charts';
+import * as shape from 'd3-shape';
 
 class AreaChartExample extends React.PureComponent {
 
     render() {
 
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
+        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ];
 
         const Line = ({ line }) => (
             <Path
@@ -16,7 +16,7 @@ class AreaChartExample extends React.PureComponent {
                 stroke={'rgb(134, 65, 244)'}
                 fill={'none'}
             />
-        )
+        );
 
         return (
             <AreaChart
@@ -29,8 +29,8 @@ class AreaChartExample extends React.PureComponent {
                 <Grid/>
                 <Line/>
             </AreaChart>
-        )
+        );
     }
 }
 
-export default AreaChartExample
+export default AreaChartExample;

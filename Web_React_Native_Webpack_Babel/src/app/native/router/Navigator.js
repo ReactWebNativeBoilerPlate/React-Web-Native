@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import { StackNavigator } from 'react-navigation';
 
 /*************** Navite mobile screens **************************/
-import SplashScreen from '../containers/Splash'
+import SplashScreen from '../containers/Splash';
 import Drawer from '../containers/dashboard/Drawer';
 // import LoginScreen from '../containers/AuthScreen/index'
 
@@ -13,12 +13,12 @@ import Drawer from '../containers/dashboard/Drawer';
 
 import ForgetPassword from "../containers/login/ForgetPassword";
 import Register from "../containers/login/Register";
-import LoginHome from "../containers/login/index"
+import LoginHome from "../containers/login/index";
 
 import FilePicker from '../components/FilePicker';
 import CameraView from '../components/ImagePickerView';
-import MapView from '../components/MapView'
-import ChartView from '../components/ChartView'
+import MapView from '../components/MapView';
+import ChartView from '../components/ChartView';
 
 /****************************************************************/
 

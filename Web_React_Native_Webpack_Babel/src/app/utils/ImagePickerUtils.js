@@ -15,7 +15,7 @@ export default function launchImagePicker(onSuccess, onCancel, onError) {
             onError(response.error);
           } else {
             const source = { uri: response.uri };
-            onSuccess(source)
+            onSuccess(source);
           }
-    })
+    });
 }

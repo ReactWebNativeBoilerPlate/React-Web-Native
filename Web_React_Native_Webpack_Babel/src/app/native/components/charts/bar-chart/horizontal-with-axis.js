@@ -1,7 +1,7 @@
-import React from 'react'
-import { View } from 'react-native'
-import { BarChart, Grid, YAxis } from 'react-native-svg-charts'
-import * as scale from 'd3-scale'
+import React from 'react';
+import { View } from 'react-native';
+import { BarChart, Grid, YAxis } from 'react-native-svg-charts';
+import * as scale from 'd3-scale';
 
 class HorizontaBarChartWithYAxis extends React.PureComponent {
 
@@ -28,7 +28,7 @@ class HorizontaBarChartWithYAxis extends React.PureComponent {
                 value: 85,
                 label: 'Five',
             },
-        ]
+        ];
 
 
         return (
@@ -54,9 +54,9 @@ class HorizontaBarChartWithYAxis extends React.PureComponent {
                     <Grid direction={Grid.Direction.VERTICAL}/>
                 </BarChart>
             </View>
-        )
+        );
     }
 
 }
 
-export default HorizontaBarChartWithYAxis
+export default HorizontaBarChartWithYAxis;

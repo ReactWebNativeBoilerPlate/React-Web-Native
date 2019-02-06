@@ -1,5 +1,5 @@
-import React from 'react'
-import { StackedBarChart } from 'react-native-svg-charts'
+import React from 'react';
+import { StackedBarChart } from 'react-native-svg-charts';
 
 class StackedBarGraph extends React.PureComponent {
 
@@ -35,10 +35,10 @@ class StackedBarGraph extends React.PureComponent {
                 cherries: 640,
                 dates: 400,
             },
-        ]
+        ];
 
-        const colors = ['#7b4173', '#a55194', '#ce6dbd', '#de9ed6']
-        const keys = ['apples', 'bananas', 'cherries', 'dates']
+        const colors = ['#7b4173', '#a55194', '#ce6dbd', '#de9ed6'];
+        const keys = ['apples', 'bananas', 'cherries', 'dates'];
 
         return (
             <StackedBarChart
@@ -49,7 +49,7 @@ class StackedBarGraph extends React.PureComponent {
                 showGrid={false}
                 contentInset={{ top: 30, bottom: 30 }}
             />
-        )
+        );
     }
 
 }

@@ -4,4 +4,4 @@ exports.SCREENS = {
   REGISTER:  "Register",
   FORGETPASSWORD:  "ForgetPassword",
   DASHBOARD:  "Dashboard"
-}
+};

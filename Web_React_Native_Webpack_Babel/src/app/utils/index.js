@@ -4,7 +4,7 @@ let commonHeaders = {
     'Content-Type': 'application/json',
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
-}
+};
 
 
 const doLogin = (payload) => fetch(`${baseUrl}auth/authorize`, {
@@ -18,4 +18,4 @@ const doLogin = (payload) => fetch(`${baseUrl}auth/authorize`, {
 
 export default {
     login: login,
-}
+};

@@ -1,6 +1,6 @@
-import React from 'react'
-import { StackedAreaChart } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
+import React from 'react';
+import { StackedAreaChart } from 'react-native-svg-charts';
+import * as shape from 'd3-shape';
 
 class AreaStackChartExample extends React.PureComponent {
 
@@ -35,10 +35,10 @@ class AreaStackChartExample extends React.PureComponent {
                 cherries: 640,
                 dates: 400,
             },
-        ]
+        ];
 
-        const colors = [ '#8800cc', '#aa00ff', '#cc66ff', '#eeccff' ]
-        const keys   = [ 'apples', 'bananas', 'cherries', 'dates' ]
+        const colors = [ '#8800cc', '#aa00ff', '#cc66ff', '#eeccff' ];
+        const keys   = [ 'apples', 'bananas', 'cherries', 'dates' ];
 
         return (
             <StackedAreaChart
@@ -48,8 +48,8 @@ class AreaStackChartExample extends React.PureComponent {
                 colors={ colors }
                 curve={ shape.curveNatural }
             />
-        )
+        );
     }
 }
 
-export default AreaStackChartExample
+export default AreaStackChartExample;

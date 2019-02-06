@@ -4,7 +4,7 @@ let commonHeaders = {
     'Content-Type': 'application/json',
     // Add other properties if required
 
-}
+};
 
 
 /**
@@ -12,7 +12,7 @@ let commonHeaders = {
  */
 
 export function callGetApi(endpoint) {
-    const url = `${BASE_URL}/${endpoint}`
+    const url = `${BASE_URL}/${endpoint}`;
   
     return fetch(url, {
         method: 'GET',
@@ -21,9 +21,9 @@ export function callGetApi(endpoint) {
       }
     })
     .then(res => {
-      console.log(res)
-      return res.json()
-    })
+      console.log(res);
+      return res.json();
+    });
   }
 
 
@@ -32,7 +32,7 @@ export function callGetApi(endpoint) {
  */
 
 export function callPostApi(endpoint, payload) {
-    const url = `${BASE_URL}/${endpoint}`
+    const url = `${BASE_URL}/${endpoint}`;
   
     return fetch(url, {
         method: 'POST',
@@ -42,9 +42,9 @@ export function callPostApi(endpoint, payload) {
       body: JSON.stringify(payload)
     })
     .then(res => {
-      console.log(res)
-      return res.json()
-    })
+      console.log(res);
+      return res.json();
+    });
   }
 
 
@@ -53,7 +53,7 @@ export function callPostApi(endpoint, payload) {
  */
 
 export function callPutApi(endpoint, id, payload) {
-    const url = `${BASE_URL}/${endpoint}/${id}`
+    const url = `${BASE_URL}/${endpoint}/${id}`;
   
     return fetch(url, {
         method: 'PUT',
@@ -63,9 +63,9 @@ export function callPutApi(endpoint, id, payload) {
       body: JSON.stringify(payload)
     })
     .then(res => {
-      console.log(res)
-      return res.json()
-    })
+      console.log(res);
+      return res.json();
+    });
   }
 
 
@@ -74,7 +74,7 @@ export function callPutApi(endpoint, id, payload) {
  */
 
 export function callDeleteApi(endpoint, id) {
-    const url = `${BASE_URL}/${endpoint}/${id}`
+    const url = `${BASE_URL}/${endpoint}/${id}`;
   
     return fetch(url, {
         method: 'DELETE',
@@ -83,7 +83,7 @@ export function callDeleteApi(endpoint, id) {
       }
     })
     .then(res => {
-      console.log(res)
-      return res.json()
-    })
+      console.log(res);
+      return res.json();
+    });
   }

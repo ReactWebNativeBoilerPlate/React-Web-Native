@@ -9,7 +9,7 @@ var Image = {
      IMG_CROSS : 'img_cross',
      IMG_MENU : 'img_menu',
      IMG_SPLASH : "img_splash"
-}
+};
 global.ImageName = Image;
 
 global.getImage =  function getImage(imgName, loadCommon = true) {
@@ -17,7 +17,7 @@ global.getImage =  function getImage(imgName, loadCommon = true) {
     {
         switch(imgName) {
             case Image.IMG_SPLASH:
-             return  require('../images/splash.png')
+             return  require('../images/splash.png');
         }
     } else {
         switch(imgName) {
@@ -37,7 +37,7 @@ global.getImage =  function getImage(imgName, loadCommon = true) {
             return Platform.OS === 'android' ? require('../images/android/img_menu.png') : require('../images/ios/img_menu.png');
 
             default:
-            break
+            break;
         }
   }
-}
+};

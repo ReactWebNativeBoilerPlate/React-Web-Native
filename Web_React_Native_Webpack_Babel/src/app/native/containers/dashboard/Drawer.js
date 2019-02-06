@@ -1,6 +1,6 @@
-import SideDrawer from '../../components/SideDrawer'
+import SideDrawer from '../../components/SideDrawer';
 import {  DrawerNavigator} from 'react-navigation';
-import Dashboard from './Dashboard'
+import Dashboard from './Dashboard';
 
 const Drawer = DrawerNavigator({
     Home:Dashboard

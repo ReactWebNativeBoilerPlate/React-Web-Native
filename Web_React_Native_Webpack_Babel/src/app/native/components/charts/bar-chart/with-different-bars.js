@@ -1,5 +1,5 @@
-import React from 'react'
-import { BarChart, Grid } from 'react-native-svg-charts'
+import React from 'react';
+import { BarChart, Grid } from 'react-native-svg-charts';
 import { Defs, LinearGradient, Stop } from "react-native-svg";
 
 class ColorBarExample extends React.PureComponent {
@@ -37,7 +37,7 @@ class ColorBarExample extends React.PureComponent {
                     fill: 'green',
                 },
             },
-        ]
+        ];
 
         const Gradient = () => (
             <Defs key={'gradient'}>
@@ -46,7 +46,7 @@ class ColorBarExample extends React.PureComponent {
                     <Stop offset={'100%'} stopColor={'rgb(66, 194, 244)'}/>
                 </LinearGradient>
             </Defs>
-        )
+        );
 
         return (
             <BarChart
@@ -60,9 +60,9 @@ class ColorBarExample extends React.PureComponent {
                 <Grid/>
                 <Gradient/>
             </BarChart>
-        )
+        );
     }
 
 }
 
-export default ColorBarExample
+export default ColorBarExample;

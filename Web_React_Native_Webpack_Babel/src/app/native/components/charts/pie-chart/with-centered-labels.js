@@ -1,6 +1,6 @@
-import React from 'react'
-import { PieChart } from 'react-native-svg-charts'
-import { Text } from 'react-native-svg'
+import React from 'react';
+import { PieChart } from 'react-native-svg-charts';
+import { Text } from 'react-native-svg';
 
 class PieChartWithCenteredLabels extends React.PureComponent {
 
@@ -32,7 +32,7 @@ class PieChartWithCenteredLabels extends React.PureComponent {
                 amount: 35,
                 svg: { fill: '#ecb3ff' }
             }
-        ]
+        ];
 
         const Labels = ({ slices, height, width }) => {
             return slices.map((slice, index) => {
@@ -51,9 +51,9 @@ class PieChartWithCenteredLabels extends React.PureComponent {
                     >
                         {data.amount}
                     </Text>
-                )
-            })
-        }
+                );
+            });
+        };
 
         return (
             <PieChart
@@ -65,9 +65,9 @@ class PieChartWithCenteredLabels extends React.PureComponent {
             >
                 <Labels/>
             </PieChart>
-        )
+        );
     }
 
 }
 
-export default PieChartWithCenteredLabels
+export default PieChartWithCenteredLabels;

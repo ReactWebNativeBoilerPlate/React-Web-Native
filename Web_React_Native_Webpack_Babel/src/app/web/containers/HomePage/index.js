@@ -4,8 +4,8 @@
  * This is the page we show when the user visits login url
  */
 
-import React, { Component } from 'react'
-import Dashboard from './Dashboard'
+import React, { Component } from 'react';
+import Dashboard from './Dashboard';
 
 import {
 
@@ -30,9 +30,9 @@ class HomePage extends Component {
         return (
             <Dashboard />
 
-        )
+        );
     }
 }
 
 
-export default HomePage
+export default HomePage;

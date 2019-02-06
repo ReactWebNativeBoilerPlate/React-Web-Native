@@ -1,11 +1,11 @@
-import React from 'react'
-import { ActivityIndicator, StyleSheet, Text } from 'react-native'
-import { View } from 'react-native-animatable'
+import React from 'react';
+import { ActivityIndicator, StyleSheet, Text } from 'react-native';
+import { View } from 'react-native-animatable';
 
-import TouchableView from './TouchableView'
+import TouchableView from './TouchableView';
 
 const CustomButton = ({ onPress, isEnabled, isLoading, text, buttonStyle, textStyle, ...otherProps }) => {
-  const onButtonPress = isEnabled && !isLoading ? onPress : () => null
+  const onButtonPress = isEnabled && !isLoading ? onPress : () => null;
 
   return (
     <View {...otherProps}>
@@ -14,14 +14,14 @@ const CustomButton = ({ onPress, isEnabled, isLoading, text, buttonStyle, textSt
         {(!isLoading) && <Text style={[styles.text, textStyle]}>{text}</Text>}
       </TouchableView>
     </View>
-  )
-}
+  );
+};
 
 CustomButton.defaultProps = {
   onPress: () => null,
   isEnabled: true,
   isLoading: false
-}
+};
 
 const styles = StyleSheet.create({
   button: {
@@ -40,6 +40,6 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: 'white'
   }
-})
+});
 
-export default CustomButton
+export default CustomButton;

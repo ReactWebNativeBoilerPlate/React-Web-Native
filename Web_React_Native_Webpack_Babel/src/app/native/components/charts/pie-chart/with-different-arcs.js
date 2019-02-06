@@ -1,5 +1,5 @@
-import React from 'react'
-import { PieChart } from 'react-native-svg-charts'
+import React from 'react';
+import { PieChart } from 'react-native-svg-charts';
 
 class PieChartWithDifferentArcs extends React.PureComponent {
 
@@ -32,7 +32,7 @@ class PieChartWithDifferentArcs extends React.PureComponent {
                 value: 35,
                 svg: { fill: '#ecb3ff' }
             }
-        ]
+        ];
 
 
         return (
@@ -42,9 +42,9 @@ class PieChartWithDifferentArcs extends React.PureComponent {
                 innerRadius={10}
                 data={data}
             />
-        )
+        );
     }
 
 }
 
-export default PieChartWithDifferentArcs
+export default PieChartWithDifferentArcs;

@@ -1,13 +1,13 @@
-import React from 'react'
-import { LineChart, Grid } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
-import { Circle, G, Line, Rect, Text } from 'react-native-svg'
+import React from 'react';
+import { LineChart, Grid } from 'react-native-svg-charts';
+import * as shape from 'd3-shape';
+import { Circle, G, Line, Rect, Text } from 'react-native-svg';
 
 class ExtrasExample extends React.PureComponent {
 
     render() {
 
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
+        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ];
 
         /**
          * Both below functions should preferably be their own React Components
@@ -24,7 +24,7 @@ class ExtrasExample extends React.PureComponent {
                 strokeDasharray={ [ 4, 8 ] }
                 strokeWidth={ 2 }
             />
-        ))
+        ));
 
         const Tooltip = ({ x, y }) => (
             <G
@@ -67,7 +67,7 @@ class ExtrasExample extends React.PureComponent {
                     />
                 </G>
             </G>
-        )
+        );
 
         return (
             <LineChart
@@ -84,9 +84,9 @@ class ExtrasExample extends React.PureComponent {
                 <HorizontalLine/>
                 <Tooltip/>
             </LineChart>
-        )
+        );
     }
 
 }
 
-export default ExtrasExample
+export default ExtrasExample;

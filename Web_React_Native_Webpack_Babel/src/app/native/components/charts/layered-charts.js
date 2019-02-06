@@ -1,14 +1,14 @@
-import React from 'react'
-import { AreaChart, Grid } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
-import { StyleSheet, View } from 'react-native'
+import React from 'react';
+import { AreaChart, Grid } from 'react-native-svg-charts';
+import * as shape from 'd3-shape';
+import { StyleSheet, View } from 'react-native';
 
 class LayeredChartsExample extends React.PureComponent {
 
     render() {
 
-        const data  = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
-        const data2 = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ].reverse()
+        const data  = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ];
+        const data2 = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ].reverse();
 
         return (
             <View style={ { height: 200 } }>
@@ -29,9 +29,9 @@ class LayeredChartsExample extends React.PureComponent {
                     curve={ shape.curveNatural }
                 />
             </View>
-        )
+        );
     }
 
 }
 
-export default LayeredChartsExample
+export default LayeredChartsExample;

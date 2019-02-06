@@ -5,7 +5,7 @@ let commonHeaders = {
     // 'Access-Control-Allow-Origin': '*',
     // 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
 
-}
+};
 
 export const doLogin = (payload) => fetch(`${baseUrl}auth/authorize`, {
     method: 'POST',

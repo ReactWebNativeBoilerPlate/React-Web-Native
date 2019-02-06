@@ -1,7 +1,7 @@
-import React from 'react'
-import { PieChart } from 'react-native-svg-charts'
-import { Circle, G, Image } from 'react-native-svg'
-import Images from '../../../assets/images'
+import React from 'react';
+import { PieChart } from 'react-native-svg-charts';
+import { Circle, G, Image } from 'react-native-svg';
+import Images from '../../../assets/images';
 
 class PieChartWithCenteredLabels extends React.PureComponent {
 
@@ -33,7 +33,7 @@ class PieChartWithCenteredLabels extends React.PureComponent {
                 amount: 35,
                 svg: { fill: '#ecb3ff' }
             }
-        ]
+        ];
 
         const Labels = ({ slices, height, width }) => {
             return slices.map((slice, index) => {
@@ -58,9 +58,9 @@ class PieChartWithCenteredLabels extends React.PureComponent {
                             href={Images.memes[ index + 1 ]}
                         />
                     </G>
-                )
-            })
-        }
+                );
+            });
+        };
 
         return (
             <PieChart
@@ -72,9 +72,9 @@ class PieChartWithCenteredLabels extends React.PureComponent {
             >
                 <Labels/>
             </PieChart>
-        )
+        );
     }
 
 }
 
-export default PieChartWithCenteredLabels
+export default PieChartWithCenteredLabels;

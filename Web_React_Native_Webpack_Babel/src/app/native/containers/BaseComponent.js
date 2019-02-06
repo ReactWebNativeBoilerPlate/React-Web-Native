@@ -13,8 +13,8 @@ class BaseComponent extends Component {
        */
         if (Platform.OS == "android" && listener == null) {
           listener = BackAndroid.addEventListener("hardwareBackPress", () => {
-            return androidBackButtonPressed()
-          })
+            return androidBackButtonPressed();
+          });
         }
       }
     
@@ -27,4 +27,4 @@ class BaseComponent extends Component {
 
 }
 
-export default BaseComponent
+export default BaseComponent;

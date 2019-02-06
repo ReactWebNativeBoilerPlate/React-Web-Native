@@ -1,7 +1,7 @@
 import validator from 'validator';
 
 import React from 'react';
-import _get from 'lodash/get'
+import _get from 'lodash/get';
 
 const required = (value,props) => {
   if (!value.toString().trim().length) {
@@ -12,20 +12,20 @@ const required = (value,props) => {
  
 const email = (value) => {
   if (!validator.isEmail(value)) {
-    return <span className="validation-help-block">{value} is not a valid email.</span>
+    return <span className="validation-help-block">{value} is not a valid email.</span>;
   }
 };
 
 const mobile = (value) => {
     if (!validator.isMobilePhone(value)) {
-        return <span className="validation-help-block">{value} is not a valid mobile number.</span>
+        return <span className="validation-help-block">{value} is not a valid mobile number.</span>;
     }
 };
 
 
 const website = (value) => {
     if (!validator.isURL(value)) {
-        return <span className="validation-help-block">{value} is not a valid url.</span>
+        return <span className="validation-help-block">{value} is not a valid url.</span>;
     }
 };
  
@@ -33,7 +33,7 @@ const lt = (value, props) => {
   // get the maxLength from component's props
   if (!value.toString().trim().length > props.maxLength) {
     // Return jsx
-    return <span className="validation-help-block">The value exceeded {props.maxLength} symbols.</span>
+    return <span className="validation-help-block">The value exceeded {props.maxLength} symbols.</span>;
   }
 };
  
@@ -46,20 +46,20 @@ const password = (value, props, components) => {
       // components['password'][0].value !== components['confirm'][0].value
     // 'confirm' - name of input
     // components['confirm'] - array of same-name components because of checkboxes and radios
-    return <span className="validation-help-block">Passwords are not equal.</span>
+    return <span className="validation-help-block">Passwords are not equal.</span>;
   }
 };
 
 const hasError = (form) => {
     let hasError = false;
-    let formChildren = _get(form,'state.byId',{})
+    let formChildren = _get(form,'state.byId',{});
     Object.keys(formChildren).forEach((childKey)=>{
         if(formChildren[childKey].error){
-            hasError = true
+            hasError = true;
         }
-    })
-    return hasError
-}
+    });
+    return hasError;
+};
 
 
 export default {
@@ -70,4 +70,4 @@ export default {
     hasError: hasError,
     mobile: mobile,
     website: website
-}
+};

@@ -5,5 +5,5 @@ export default Holder = () => {
     return(
         <View style = {{flex : 1}}>
         </View>
-    )
-}
+    );
+};

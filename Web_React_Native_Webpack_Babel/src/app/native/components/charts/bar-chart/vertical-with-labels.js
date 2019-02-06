@@ -1,15 +1,15 @@
-import React from 'react'
-import { View } from 'react-native'
-import { BarChart, Grid } from 'react-native-svg-charts'
-import { Text } from 'react-native-svg'
+import React from 'react';
+import { View } from 'react-native';
+import { BarChart, Grid } from 'react-native-svg-charts';
+import { Text } from 'react-native-svg';
 
 class BarChartVerticalWithLabels extends React.PureComponent {
 
     render() {
 
-        const data = [ 10, 5, 25, 15, 20 ]
+        const data = [ 10, 5, 25, 15, 20 ];
 
-        const CUT_OFF = 20
+        const CUT_OFF = 20;
         const Labels = ({ x, y, bandwidth, data }) => (
             data.map((value, index) => (
                 <Text
@@ -24,7 +24,7 @@ class BarChartVerticalWithLabels extends React.PureComponent {
                     {value}
                 </Text>
             ))
-        )
+        );
 
         return (
             <View style={{ flexDirection: 'row', height: 200, paddingVertical: 16 }}>
@@ -40,9 +40,9 @@ class BarChartVerticalWithLabels extends React.PureComponent {
                     <Labels/>
                 </BarChart>
             </View>
-        )
+        );
     }
 
 }
 
-export default BarChartVerticalWithLabels
+export default BarChartVerticalWithLabels;

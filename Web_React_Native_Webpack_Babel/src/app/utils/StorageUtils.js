@@ -10,29 +10,29 @@ import SyncStorage from "sync-storage";
 
   global.init = function () {
     SyncStorage.init();
-  }
+  };
 
   global.get = function (key , defalutValue) {
-   var value = SyncStorage.get(key)
+   var value = SyncStorage.get(key);
    if(value)
    {
        return value;
    }
    return defalutValue;
-  }
+  };
 
   global.set =  function (key, value){
-   return SyncStorage.set(key, value)
-  }
+   return SyncStorage.set(key, value);
+  };
 
   global.remove =  function (key) {
-    return SyncStorage.remove(key)
-  }
+    return SyncStorage.remove(key);
+  };
 
   global.saveItem = function (stringArray) {
-     SyncStorage.saveItem(stringArray)
-  }
+     SyncStorage.saveItem(stringArray);
+  };
 
   global.getAllKeys = function () {
-   return SyncStorage.getAllKeys(stringArray)
-  }
+   return SyncStorage.getAllKeys(stringArray);
+  };

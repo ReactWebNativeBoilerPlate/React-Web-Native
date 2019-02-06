@@ -1,5 +1,5 @@
-import React from 'react'
-import { View } from 'react-native'
+import React from 'react';
+import { View } from 'react-native';
 
 const ShowcaseContainer = ({ children }) => (
     <View style={ {
@@ -16,6 +16,6 @@ const ShowcaseContainer = ({ children }) => (
     } }>
         { children }
     </View>
-)
+);
 
-export default ShowcaseContainer
+export default ShowcaseContainer;

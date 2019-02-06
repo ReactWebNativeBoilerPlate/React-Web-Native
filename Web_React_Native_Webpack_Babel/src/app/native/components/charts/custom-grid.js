@@ -1,13 +1,13 @@
-import React from 'react'
-import { LineChart } from 'react-native-svg-charts'
-import { View } from 'react-native'
-import { G, Line } from 'react-native-svg'
+import React from 'react';
+import { LineChart } from 'react-native-svg-charts';
+import { View } from 'react-native';
+import { G, Line } from 'react-native-svg';
 
 class CustomGridExample extends React.PureComponent {
 
     render() {
 
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
+        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ];
 
         const CustomGrid = ({ x, y, data, ticks }) => (
             <G>
@@ -38,7 +38,7 @@ class CustomGridExample extends React.PureComponent {
                     ))
                 }
             </G>
-        )
+        );
 
         return (
             <View style={ { height: 200, flexDirection: 'row' } }>
@@ -52,9 +52,9 @@ class CustomGridExample extends React.PureComponent {
                     <CustomGrid belowChart={true}/>
                 </LineChart>
             </View>
-        )
+        );
     }
 
 }
 
-export default CustomGridExample
+export default CustomGridExample;
