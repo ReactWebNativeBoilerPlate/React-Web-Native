@@ -41,8 +41,8 @@ class LoginPage extends Component {
       open: true
     };
   }
-  componentWillMount() {
-    console.log('componentWillMount props loginResponse: ', this.props.loginResponse);
+  componentDidMount() {
+    console.log('componentDidMount props loginResponse: ', this.props.loginResponse);
   }
 
 
@@ -61,7 +61,7 @@ class LoginPage extends Component {
       this.props.actions.doLogin({ email: this.state.email, password: this.state.password });
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.isLoggedIn) {
       this.props.history.push('/home');
     } else

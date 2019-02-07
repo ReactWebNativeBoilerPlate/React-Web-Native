@@ -72,7 +72,7 @@ class SignupPage extends Component {
     }
 
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         console.log(nextProps);
         console.log(this.props.registerUserResponse, "registerUserResponse");
     }
@@ -223,7 +223,7 @@ class SignupPage extends Component {
                                                         </Row>
                                                         <Row>
                                                             <Col md="3">
-                                                                <Button variant="contained" color="primary" id="createAccount" color="success" onClick={(event) => this.handleSubmit(event)} block>Create Account</Button>
+                                                                <Button variant="contained" id="createAccount" color="success" onClick={(event) => this.handleSubmit(event)} block>Create Account</Button>
                                                                 <p>Already have an account ? <Link id="signIn" to="/login">SignIn</Link></p>
                                                                 {!this.props.isUserRegistered && <p style={{ color: 'red', paddingTop: '10px' }}>{this.props.registerUserResponse && this.props.registerUserResponse.message ? this.props.registerUserResponse.message : ""}</p>}
                                                             </Col>

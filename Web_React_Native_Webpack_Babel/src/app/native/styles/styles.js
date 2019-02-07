@@ -15,7 +15,7 @@ export default (appStyle = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     height: 48,
-    width : '100%',
+    width: "100%"
   },
 
   toolbarTextStyle: {

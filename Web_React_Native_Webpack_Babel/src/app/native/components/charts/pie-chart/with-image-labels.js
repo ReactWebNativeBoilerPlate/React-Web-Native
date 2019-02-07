@@ -35,9 +35,9 @@ class PieChartWithCenteredLabels extends React.PureComponent {
             }
         ];
 
-        const Labels = ({ slices, height, width }) => {
+        const Labels = ({ slices }) => {
             return slices.map((slice, index) => {
-                const { labelCentroid, pieCentroid, data } = slice;
+                const { labelCentroid } = slice;
                 return (
                     <G
                         key={index}

@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react-native';
 
 import ShowcaseCard from './decorators/showcase-container';
 
-import AreaChart from './area-chart/with-line';
 import AreaChartWithGradient from './area-chart/with-gradient';
 
 

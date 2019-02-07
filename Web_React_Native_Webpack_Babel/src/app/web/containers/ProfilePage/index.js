@@ -44,7 +44,7 @@ class ProfilePage extends Component {
         this.setState({ [name]: value });
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.props.practiceAction.fetchPracticeList();
         let data = {
             subId: sessionStorage.getItem('subId')
@@ -52,19 +52,13 @@ class ProfilePage extends Component {
         this.props.actions.getUserProfileData(data);
     }
 
-    componentWillReceiveProps(nextProps){
+    UNSAFE_componentWillReceiveProps(nextProps){
         
         if(nextProps.profileData){
             console.log(nextProps.profileData);
             delete nextProps.profileData.password;
             this.setState(nextProps.profileData);
         }
-
-        if(nextProps.passwordUpdateData){
-            
-           
-        }
-
     }
 
     toggle() {

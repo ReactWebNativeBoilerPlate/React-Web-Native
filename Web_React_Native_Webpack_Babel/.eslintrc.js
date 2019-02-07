@@ -1,7 +1,8 @@
 module.exports = {
       "parser": "babel-eslint",
       "env": {
-        "browser": true
+        "browser": true,
+        "node": true 
       },
       "plugins": [
         "react",
@@ -24,7 +25,7 @@ module.exports = {
         "react/prop-types": 0,
         "react/jsx-no-bind": 0,
         "no-console": 0,
-        "no-undef:": 0,
+        "react/display-name" : 0,
       },
       "globals": {
         "GLOBAL": false,

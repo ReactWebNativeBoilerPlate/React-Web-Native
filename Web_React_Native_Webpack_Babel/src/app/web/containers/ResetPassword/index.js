@@ -33,11 +33,11 @@ class ResetPassword extends Component {
         this.setState({ [name]: value });
     }
 
-    componentWillMount() {
+    componentDidMount() {
         console.log(this.props.location.search);
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.passUpdateSuccess) {
             this.props.history.push('/login');
         }

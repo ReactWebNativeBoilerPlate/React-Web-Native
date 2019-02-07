@@ -42,7 +42,7 @@ class Register extends Component {
     }
   };
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.loginFailed) {
       this.setState({
         loading: false
@@ -119,7 +119,6 @@ class Register extends Component {
               ref={input => (this.passwordCInput = input)}
               onSubmitEditing={() => this.passwordInput.focus()}
               returnKeyType="next"
-              secureTextEntry
             />
             <TextInput
               value={this.state.password}
@@ -131,7 +130,6 @@ class Register extends Component {
               secureTextEntry={true}
               placeholderTextColor="gray"
               returnKeyType="go"
-              secureTextEntry
               ref={input => (this.passwordInput = input)}
             />
           </KeyboardAvoidingView>
@@ -159,7 +157,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexGrow: 1,
     justifyContent: "center",
-    alignItems: "center"
   },
   logo: {
     width: 200,

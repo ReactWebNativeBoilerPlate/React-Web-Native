@@ -10,7 +10,7 @@ export default class Root extends Component {
           <div>
             <Switch>
               <Route path="/" component={LoginPage} />
-              <Route path="/signup" component={SignupPage} />
+              {/* <Route path="/signup" component={SignupPage} /> */}
             </Switch>
           </div>
         </Router>

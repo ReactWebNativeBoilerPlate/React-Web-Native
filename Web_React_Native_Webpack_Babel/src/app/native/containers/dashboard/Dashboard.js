@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { View, StyleSheet } from "react-native";
-
 import appTheme from "../../styles/theme.style";
 
 import Toolbar from "../../components/ToolbarWithMenu";
@@ -11,13 +9,6 @@ import Holder from "../../components/HolderComponent";
 import { connect } from "react-redux";
 /********************************************************/
 
-const FirstRoute = () => (
-  <View style={[styles.scene, { backgroundColor: "#ff4081" }]} />
-);
-const SecondRoute = () => (
-  <View style={[styles.scene, { backgroundColor: "#673ab7" }]} />
-);
-
 class Dashboard extends Component {
   componentDidMount() {
     this.interval = setInterval(() => {
@@ -26,11 +17,11 @@ class Dashboard extends Component {
     }, 1000);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     console.log("Component  will receive props");
     console.log(nextProps);
   }
-  handleSubmit(event) {
+  handleSubmit() {
     console.log(this.props);
   }
 
@@ -74,18 +65,12 @@ class Dashboard extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  scene: {
-    flex: 1
-  }
-});
-
 const mapStateToProps = state => {
   console.log("login new mapStateToProps", state);
   return state;
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = () => {
   return {};
 };
 

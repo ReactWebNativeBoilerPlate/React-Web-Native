@@ -4,7 +4,7 @@ import { Platform, View, TouchableNativeFeedback, TouchableOpacity } from 'react
 const IS_ANDROID = Platform.OS === 'android';
 const IS_RIPPLE_EFFECT_SUPPORTED = Platform.Version >= 21 && IS_ANDROID;
 
-const TouchableView = ({ isRippleDisabled, rippleColor, children, style, ...props }) => {
+const TouchableView = ({ isRippleDisabled, children, style, ...props }) => {
   if (IS_RIPPLE_EFFECT_SUPPORTED && !isRippleDisabled) {
     const background = TouchableNativeFeedback.Ripple('#FFF');
     return (

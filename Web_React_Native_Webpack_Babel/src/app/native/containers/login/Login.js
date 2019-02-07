@@ -36,7 +36,7 @@ class Login extends Component {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.loginResponse) {
       this.setState({
         loading: false
@@ -74,11 +74,7 @@ class Login extends Component {
     }
 
     const { email, password } = this.state;
-    var payload = {
-      email: email,
-      password: password
-    };
-
+    
     console.log((email, password));
     console.log(this.props.LoginActions);
     // if (this.props.LoginActions) {
@@ -173,7 +169,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexGrow: 1,
     justifyContent: "center",
-    alignItems: "center"
   },
   logo: {
     width: 200,

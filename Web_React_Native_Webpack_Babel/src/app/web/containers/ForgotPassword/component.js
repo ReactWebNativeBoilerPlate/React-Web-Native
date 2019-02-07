@@ -46,7 +46,7 @@ class ForgotPassword extends Component {
         this.setState({ [name]: value });
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (nextProps.forgetPassword) {
             this.setState({ message: nextProps.forgetPassword.message });
             this.setState({ email: "" });
@@ -54,8 +54,8 @@ class ForgotPassword extends Component {
         }
     }
 
-    componentWillMount() {
-        console.log('componentWillMount props loginResponse: ', this.props.loginResponse);
+    componentDidMount() {
+        console.log('componentDidMount props loginResponse: ', this.props.loginResponse);
     }
 
     handleSubmit(event) {

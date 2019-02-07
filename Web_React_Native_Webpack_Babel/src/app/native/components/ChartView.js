@@ -89,7 +89,7 @@ export default class ChartView extends React.Component {
 
   render() {
     let selectedButton = this.state.data.find(e => e.selected == true);
-    selectedValue = selectedButton
+    var selectedValue = selectedButton
       ? selectedButton.value
       : this.state.data[0].value;
 

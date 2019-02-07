@@ -33,6 +33,6 @@ import SyncStorage from "sync-storage";
      SyncStorage.saveItem(stringArray);
   };
 
-  global.getAllKeys = function () {
+  global.getAllKeys = function (stringArray) {
    return SyncStorage.getAllKeys(stringArray);
   };
