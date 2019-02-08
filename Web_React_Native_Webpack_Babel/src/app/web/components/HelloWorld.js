@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class HelloWorld extends Component {
   render() {
@@ -9,3 +10,7 @@ export default class HelloWorld extends Component {
   }
 }
 
+HelloWorld.propTypes = {
+  onClick : PropTypes.func,
+  color : PropTypes.string,
+}

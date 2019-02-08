@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Button, Card, CardBody, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -8,7 +9,6 @@ import { Helmet } from 'react-helmet';
 
 
 import * as loginActions from '../../../actions/LoginAction';
-
 
 class ResetPassword extends Component {
     constructor(props) {
@@ -161,6 +161,22 @@ function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(loginActions, dispatch),
     };
+}
+
+ResetPassword.propTypes = {
+    location : PropTypes.any,
+    passUpdateSuccess : PropTypes.bool,
+    history: PropTypes.any,
+    push: PropTypes.any,
+    actions: PropTypes.any,
+    updatePassword : PropTypes.func,
+    practiceListResponse : PropTypes.array,
+    forgotStatus : PropTypes.bool,
+    practiceListData : PropTypes.array,
+    inputProps : PropTypes.object,
+    Jumbotron : PropTypes.any,
+    passUpdateData : PropTypes.any,
+    message : PropTypes.string,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ResetPassword);

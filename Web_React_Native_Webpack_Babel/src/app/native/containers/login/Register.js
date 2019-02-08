@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import Loader from "../../components/loader";
 import {
   StyleSheet,
@@ -143,6 +144,14 @@ class Register extends Component {
       </View>
     );
   }
+}
+
+Register.propTypes = {
+  loginFailed : PropTypes.bool,
+  isSignupSuccess : PropTypes.bool,
+  signupResponse : PropTypes.object,
+  LoginActions : PropTypes.any,
+  doSignup : PropTypes.func,
 }
 
 const styles = StyleSheet.create({

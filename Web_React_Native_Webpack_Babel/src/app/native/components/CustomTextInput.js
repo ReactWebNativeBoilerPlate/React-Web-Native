@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, TextInput } from 'react-native';
+import PropTypes from 'prop-types';
 import { View } from 'react-native-animatable';
 
 const IS_ANDROID = Platform.OS === 'android';
@@ -38,6 +39,10 @@ export default class AuthTextInput extends Component {
       </View>
     );
   }
+}
+
+AuthTextInput.propTypes = {
+  isEnabled : PropTypes.bool,
 }
 
 const styles = StyleSheet.create({

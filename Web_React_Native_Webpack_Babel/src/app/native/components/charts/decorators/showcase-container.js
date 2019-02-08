@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { View } from 'react-native';
 
 const ShowcaseContainer = ({ children }) => (
@@ -17,5 +18,9 @@ const ShowcaseContainer = ({ children }) => (
         { children }
     </View>
 );
+
+ShowcaseContainer.propTypes = {
+    children : PropTypes.any
+}
 
 export default ShowcaseContainer;

@@ -4,6 +4,7 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 export default class HelloWorld extends Component {
   render() {
@@ -23,3 +24,7 @@ export default class HelloWorld extends Component {
   }
 }
 
+HelloWorld.propTypes = {
+  onPress : PropTypes.func,
+  color : PropTypes.string,
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import PropTypes from 'prop-types';
 import Navigator from '../router/Navigator';
 import { SafeAreaView } from 'react-navigation';
 
@@ -17,5 +18,8 @@ export default class Root extends Component {
   }
 }
 
+Root.propTypes = {
+  store : PropTypes.any,
+}
 
 

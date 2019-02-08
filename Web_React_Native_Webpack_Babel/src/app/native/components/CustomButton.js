@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ActivityIndicator, StyleSheet, Text } from 'react-native';
 import { View } from 'react-native-animatable';
 
@@ -41,5 +42,14 @@ const styles = StyleSheet.create({
     color: 'white'
   }
 });
+
+CustomButton.propTypes = {
+  onPress: PropTypes.func,
+  isEnabled: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  text : PropTypes.string,
+  buttonStyle: PropTypes.object,
+  textStyle: PropTypes.object,
+}
 
 export default CustomButton;

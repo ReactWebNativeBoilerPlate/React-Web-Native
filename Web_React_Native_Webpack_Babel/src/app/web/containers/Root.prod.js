@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import PropTypes from 'prop-types';
 import LoginPage from '../containers/LoginPage/index';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 export default class Root extends Component {
   render() {
     return (
@@ -17,4 +19,8 @@ export default class Root extends Component {
       </Provider>
     );
   }
+}
+
+Root.propTypes = {
+  store : PropTypes.any,
 }

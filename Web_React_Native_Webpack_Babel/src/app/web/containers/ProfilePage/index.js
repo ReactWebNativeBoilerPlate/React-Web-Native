@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Card, CardBody, Col, Container, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import PropTypes from 'prop-types';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
 import Validator from '../../utils/validations';
@@ -340,6 +341,17 @@ function mapDispatchToProps(dispatch) {
         actions: bindActionCreators(loginActions, dispatch),
         practiceAction: bindActionCreators(practice, dispatch)
     };
+}
+
+ProfilePage.propTypes = {
+    practiceAction : PropTypes.any,
+    fetchPracticeList : PropTypes.func,
+    actions : PropTypes.any,
+    getUserProfileData : PropTypes.object,
+    profileData : PropTypes.any,
+    password : PropTypes.string,
+    updateProfileData : PropTypes.func,
+    updateUserPassword : PropTypes.func,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProfilePage);

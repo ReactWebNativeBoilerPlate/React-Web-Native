@@ -4,6 +4,7 @@ import {
     InputGroup, Row, Jumbotron
 } from 'reactstrap';
 import Form from 'react-validation/build/form';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import './style.css';
@@ -268,6 +269,13 @@ function mapDispatchToProps(dispatch) {
         actions: bindActionCreators(loginActions, dispatch),
 
     };
+}
+
+SignupPage.propTypes = {
+    actions : PropTypes.any,
+    isUserRegistered : PropTypes.bool,
+    doSignup : PropTypes.func,
+    registerUserResponse : PropTypes.object,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignupPage);

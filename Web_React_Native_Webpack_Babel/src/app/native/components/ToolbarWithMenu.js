@@ -1,8 +1,9 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
+import PropTypes from 'prop-types';
 import appStyle from "../styles/styles";
 
-export default (props => {
+const ToolbarWithMenu = props => {
   return (
     <View style={appStyle.toolbarStyle}>
       <TouchableOpacity onPress={() => {props.navigation.toggleDrawer();}}>
@@ -14,5 +15,10 @@ export default (props => {
       <Text style={appStyle.toolbarTextStyle}>{props.headerText}</Text>
     </View>
   );
-});
+};
 
+ToolbarWithMenu.propTypes = {
+  headerText : PropTypes.string,
+}
+
+export default ToolbarWithMenu;

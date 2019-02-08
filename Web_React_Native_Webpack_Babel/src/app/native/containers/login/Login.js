@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import Loader from "../../components/loader";
 import ScreenConst from "../../router/ScreenConstants";
 import SnackBar from "react-native-snackbar-component";
@@ -158,6 +159,12 @@ class Login extends Component {
       </View>
     );
   }
+}
+
+Login.propTypes = {
+  loginFailed : PropTypes.bool,
+  loginResponse : PropTypes.object,
+  LoginActions : PropTypes.any,
 }
 
 const styles = StyleSheet.create({

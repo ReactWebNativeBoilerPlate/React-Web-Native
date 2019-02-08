@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import themeStyle from "./theme.style";
 
-export default (appStyle = StyleSheet.create({
+const appStyle = StyleSheet.create({
   reactNativeWeb: {
     flexDirection: "column",
     flex: 1,
@@ -52,4 +52,6 @@ export default (appStyle = StyleSheet.create({
     fontSize: 12,
     textDecorationLine: "underline"
   }
-}));
+});
+
+export default appStyle;

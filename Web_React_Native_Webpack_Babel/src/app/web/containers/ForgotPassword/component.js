@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Card, CardBody, CardGroup, Col, Container, InputGroup, Row } from 'reactstrap';
 import Form from 'react-validation/build/form';
@@ -28,7 +29,13 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 
 class ForgotPassword extends Component {
-
+    static get propTypes() { 
+        return { 
+            children: PropTypes.any, 
+            onClickOut: PropTypes.func 
+        }; 
+    }
+    
     constructor(props) {
         super(props);
         console.log(" In forget password page");
@@ -158,6 +165,14 @@ function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(loginActions, dispatch)
     };
+}
+
+ForgotPassword.propTypes = {
+    forgetPassword : PropTypes.bool,
+    message : PropTypes.string,
+    loginResponse : PropTypes.object,
+    actions : PropTypes.any,
+    forgotPassword : PropTypes.func,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ForgotPassword);

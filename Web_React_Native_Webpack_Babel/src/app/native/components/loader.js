@@ -6,6 +6,7 @@ import {
   Modal,
   ActivityIndicator
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const Loader = props => {
   const {
@@ -27,6 +28,10 @@ const Loader = props => {
     </Modal>
   );
 };
+
+Loader.propTypes = {
+  loading : PropTypes.bool
+}
 
 const styles = StyleSheet.create({
   modalBackground: {

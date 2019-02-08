@@ -1,8 +1,9 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
+import PropTypes from 'prop-types';
 import appStyle from "../styles/styles";
 
-export default (props => {
+const Toolbar = props => {
   return (
     <View style={appStyle.toolbarStyle}>
       {props.isBackEnabled && (
@@ -16,5 +17,11 @@ export default (props => {
       <Text style={appStyle.toolbarTextStyle}>{props.headerText}</Text>
     </View>
   );
-});
+};
 
+Toolbar.propTypes = {
+  isBackEnabled : PropTypes.bool,
+  headerText : PropTypes.string,
+}
+
+export default Toolbar;

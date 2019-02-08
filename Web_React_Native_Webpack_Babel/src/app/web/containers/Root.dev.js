@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-
-
+import PropTypes from 'prop-types';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-
 
 import HomePage from './HomePage/index';
 // import { ProfilePage } from '../App/web/containers/ProfilePage/index'
@@ -36,3 +33,7 @@ export default class Root extends Component {
   }
 }
 
+
+Root.propTypes = {
+  store : PropTypes.any,
+}

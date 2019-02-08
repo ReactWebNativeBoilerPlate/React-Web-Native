@@ -8,6 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   Row
 } from 'reactstrap';
@@ -193,6 +194,16 @@ function mapDispatchToProps(dispatch) {
   return {
     actions: bindActionCreators(loginActions, dispatch)
   };
+}
+
+LoginPage.propTypes = {
+  loginResponse: PropTypes.any,
+  actions: PropTypes.any,
+  doLogin : PropTypes.func,
+  isLoggedIn : PropTypes.bool,
+  history: PropTypes.any,
+  push: PropTypes.any,
+  message : PropTypes.string,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);
