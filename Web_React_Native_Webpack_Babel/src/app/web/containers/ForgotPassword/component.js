@@ -29,12 +29,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 
 class ForgotPassword extends Component {
-    static get propTypes() { 
-        return { 
-            children: PropTypes.any, 
-            onClickOut: PropTypes.func 
-        }; 
-    }
     
     constructor(props) {
         super(props);
