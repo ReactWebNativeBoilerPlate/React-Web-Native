@@ -39,6 +39,7 @@
     "react-center": "^1.1.1",
     "react-chartist": "^0.13.1",
     "react-dom": "^16.7.0",
+    "react-google-charts": "^3.0.10",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.0",
     "react-i18next": "^9.0.7",
@@ -74,6 +75,7 @@
     "sass-loader": "^7.1.0",
     "superagent": "^4.1.0",
     "sync-storage": "^0.3.0",
+    "url-loader": "^1.1.2",
     "validator": "^10.10.0"
   },
   "devDependencies": {

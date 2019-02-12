@@ -131,9 +131,11 @@ class LoginPage extends Component {
               />
               <br />
               <Row>
-                <Button variant="contained" color="primary" style={style} onClick={(event) => this.handleSubmit(event)} >
+                <Link to="/home" style={{ textDecoration: 'none' }} >
+                <Button variant="contained" color="primary" style={style} /* onClick={(event) => this.handleSubmit(event)} */ >
                   Login
                 </Button>
+                </Link>
                 <Link to="/signup" style={{ textDecoration: 'none' }} >
                   <Button variant="contained" color="secondary" style={style} >
                     Register

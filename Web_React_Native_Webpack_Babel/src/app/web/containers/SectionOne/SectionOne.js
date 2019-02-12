@@ -28,67 +28,57 @@ const styles = theme => ({
 
 const tileData = [
     {
-        img: '/static/images/grid-list/breakfast.jpg',
+        img: require('../../images/grid/img1.jpeg'),
         title: 'Breakfast',
         author: 'jill111',
         cols: 2,
         featured: true,
     },
     {
-        img: '/static/images/grid-list/burgers.jpg',
+        img: require('../../images/grid/img2.jpeg'),
         title: 'Tasty burger',
         author: 'director90',
     },
     {
-        img: '/static/images/grid-list/camera.jpg',
+        img: require('../../images/grid/img3.jpeg'),
         title: 'Camera',
         author: 'Danson67',
     },
     {
-        img: '/static/images/grid-list/morning.jpg',
+        img: require('../../images/grid/img4.jpeg'),
         title: 'Morning',
         author: 'fancycrave1',
         featured: true,
     },
     {
-        img: '/static/images/grid-list/hats.jpg',
+        img: require('../../images/grid/img5.jpeg'),
         title: 'Hats',
         author: 'Hans',
     },
     {
-        img: '/static/images/grid-list/honey.jpg',
+        img: require('../../images/grid/img6.jpeg'),
         title: 'Honey',
         author: 'fancycravel',
     },
     {
-        img: '/static/images/grid-list/vegetables.jpg',
+        img: require('../../images/grid/img7.jpeg'),
         title: 'Vegetables',
         author: 'jill111',
         cols: 2,
     },
     {
-        img: '/static/images/grid-list/plant.jpg',
+        img: require('../../images/grid/img8.jpeg'),
         title: 'Water plant',
         author: 'BkrmadtyaKarki',
     },
     {
-        img: '/static/images/grid-list/mushroom.jpg',
-        title: 'Mushrooms',
-        author: 'PublicDomainPictures',
-    },
-    {
-        img: '/static/images/grid-list/olive.jpg',
-        title: 'Olive oil',
-        author: 'congerdesign',
-    },
-    {
-        img: '/static/images/grid-list/star.jpg',
+        img: require('../../images/grid/img9.jpeg'),
         title: 'Sea star',
         cols: 2,
         author: '821292',
     },
     {
-        img: '/static/images/grid-list/bike.jpg',
+        img: require('../../images/grid/img10.jpeg'),
         title: 'Bike',
         author: 'danfador',
     },
@@ -103,7 +93,7 @@ function TitlebarGridList(props) {
 
     return (
         <div className={classes.root}>
-            <GridList cellHeight={180} className={classes.gridList}>
+            <GridList cellHeight={400} className={classes.gridList}>
                 <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
                     <ListSubheader component="div">December</ListSubheader>
                 </GridListTile>

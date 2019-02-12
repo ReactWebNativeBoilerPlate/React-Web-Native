@@ -27,6 +27,7 @@ import Menu from '@material-ui/core/Menu';
 
 import SectionOne from '../SectionOne/SectionOne';
 import Tanble from '../SectionThree/Table';
+import Charts from '../Charts';
 
 
 const drawerWidth = 240;
@@ -147,10 +148,18 @@ class PersistentDrawerLeft extends React.Component {
         this.setState({ screen: "baar" });
     };
 
+    handleAdditionalItemClick = () => {
+        this.setState({ screen: "charts" });
+    };
+
     renderSwitch(param) {
         switch (param) {
             case 'foo':
                 return <SectionOne />;
+
+            case 'charts':
+            return <Charts />;
+
             default:
                 return <Tanble />;
         }
@@ -287,6 +296,15 @@ class PersistentDrawerLeft extends React.Component {
                     <List>
                         {['All mail', 'Trash', 'Spam'].map((text, index) => (
                             <ListItem button key={text} onClick={this.handleSecondaryItemClick}>
+                                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                                <ListItemText primary={text} />
+                            </ListItem>
+                        ))}
+                    </List>
+                    <Divider />
+                    <List>
+                        {['File Picker', 'Map', 'Chart'].map((text, index) => (
+                            <ListItem button key={text} onClick={this.handleAdditionalItemClick}>
                                 <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                                 <ListItemText primary={text} />
                             </ListItem>
