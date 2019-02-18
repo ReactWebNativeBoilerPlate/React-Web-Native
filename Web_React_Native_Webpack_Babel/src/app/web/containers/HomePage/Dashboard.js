@@ -15,8 +15,6 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import GridIcon from "../../images/ic_grid.png";
 import MailIcon from "@material-ui/icons/Mail";
 import Badge from "@material-ui/core/Badge";
 import NotificationsIcon from "@material-ui/icons/Notifications";
@@ -28,6 +26,7 @@ import Menu from "@material-ui/core/Menu";
 import SectionOne from "../SectionOne/SectionOne";
 import Tanble from "../SectionThree/Table";
 import Charts from "../Charts";
+//import MapContainer from "../MapContainer";
 
 const drawerWidth = 240;
 
@@ -190,6 +189,9 @@ class PersistentDrawerLeft extends React.Component {
       case "charts":
         return <Charts />;
 
+        //case "charts":
+        //return <MapContainer />;
+
       default:
         return <Tanble />;
     }
@@ -323,7 +325,7 @@ class PersistentDrawerLeft extends React.Component {
           </div>
           <Divider />
           <List>
-            {["Grid Sample", "Table Sample", "Charts", "Maps"].map(
+            {["Grid Sample", "Table Sample", "Charts", "Map"].map(
               (text, index) => (
                 <ListItem
                   button
