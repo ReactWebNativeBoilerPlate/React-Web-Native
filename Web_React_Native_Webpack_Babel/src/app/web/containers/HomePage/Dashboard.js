@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
@@ -125,6 +126,11 @@ class PersistentDrawerLeft extends React.Component {
     this.handleMobileMenuClose();
   };
 
+  handleMenuClose = () => {
+    this.setState({ anchorEl: null });
+    this.handleMobileMenuClose();
+  };
+
   handleMobileMenuOpen = event => {
     this.setState({ mobileMoreAnchorEl: event.currentTarget });
   };
@@ -189,8 +195,8 @@ class PersistentDrawerLeft extends React.Component {
       case "charts":
         return <Charts />;
 
-        //case "charts":
-        //return <MapContainer />;
+      //case "charts":
+      //return <MapContainer />;
 
       default:
         return <Tanble />;
@@ -214,6 +220,9 @@ class PersistentDrawerLeft extends React.Component {
       >
         <MenuItem onClick={this.handleMenuClose}>Profile</MenuItem>
         <MenuItem onClick={this.handleMenuClose}>My account</MenuItem>
+        <Link to="/login" style={{ textDecoration: "none" }}>
+          <MenuItem onClick={this.handleMenuClose}>Logout</MenuItem>
+        </Link>
       </Menu>
     );
 
