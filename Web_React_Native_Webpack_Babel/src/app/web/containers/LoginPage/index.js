@@ -145,7 +145,7 @@ class LoginPage extends Component {
               <Row>
                 <Link to="/forgotPassword">
                   <Button style={style}  >
-                    Forgot password
+                  Forgot Password
                 </Button>
                 </Link>
               </Row>
