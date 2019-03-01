@@ -33,11 +33,12 @@ The app has almost all major implementation which are required to start a projec
 
 #### Screenshots:
 
- ![Screenshot 1](./Screenshots/native/scr1.png?raw=true) | ![Screenshot 1](./Screenshots/native/scr2.png?raw=true)
- ![Screenshot 1](./Screenshots/native/scr3.png?raw=true) | ![Screenshot 1](./Screenshots/native/scr4.png?raw=true)
- ![Screenshot 1](./Screenshots/native/scr5.png?raw=true) | ![Screenshot 1](./Screenshots/native/scr6.png?raw=true)
- ![Screenshot 1](./Screenshots/native/scr7.png?raw=true)
-
+|         |  | 
+| ------------- |:-------------:| -----:|
+| ![Screenshot 1](./Screenshots/native/scr1.png?raw=true) | ![Screenshot 2](./Screenshots/native/scr2.png?raw=true)
+| ![Screenshot 3](./Screenshots/native/scr3.png?raw=true) | ![Screenshot 4](./Screenshots/native/scr4.png?raw=true)
+| ![Screenshot 5](./Screenshots/native/scr5.png?raw=true) | ![Screenshot 6](./Screenshots/native/scr6.png?raw=true)
+| ![Screenshot 7](./Screenshots/native/scr7.png?raw=true) 
 #### Prebuilt modules:
 
 ##### File Picker:
