@@ -334,7 +334,7 @@ class PersistentDrawerLeft extends React.Component {
           </div>
           <Divider />
           <List>
-            {["Grid Sample", "Table Sample", "Charts", "Map"].map(
+            {["Grid Sample", "Table Sample", "Charts"].map(
               (text, index) => (
                 <ListItem
                   button

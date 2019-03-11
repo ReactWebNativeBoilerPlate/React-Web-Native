@@ -4,7 +4,7 @@ export default function openDocumentPicker(onResult) {
     DocumentPicker.show({
         filetype: [DocumentPickerUtil.images()],
         },(error,res) => {
-            console.log(res.uri, res.type, res.fileName, res.fileSize);
+            // console.log(res.uri, res.type, res.fileName, res.fileSize);
             onResult(error, res);
         });
 }

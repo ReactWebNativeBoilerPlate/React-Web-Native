@@ -94,7 +94,7 @@ export default class ChartView extends React.Component {
       : this.state.data[0].value;
 
     return (
-      <View>
+      <View style = {{flex: 1}}>
         <Toolbar
           headerText="Charts"
           isBackEnabled={true}
@@ -114,7 +114,8 @@ export default class ChartView extends React.Component {
             {selectedValue == charts.X_AXIS && <XAxis />}
             {selectedValue == charts.Y_AXIS && <YAxis />}
 
-            <RadioGroup radioButtons={this.state.data} onPress={this.onPress} />
+            <RadioGroup style = {styles.radioGroupStyle}
+              radioButtons={this.state.data} onPress={this.onPress} />
           </View>
         </ScrollView>
       </View>
@@ -124,6 +125,10 @@ export default class ChartView extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 16
+    padding: 10,
+  },
+
+  radioGroupStyle: {
+    padding: 10,
   }
 });

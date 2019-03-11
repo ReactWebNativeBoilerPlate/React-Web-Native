@@ -25,7 +25,7 @@ export default class FilePicker extends Component {
 
         <TouchableOpacity
           style={appStyles.buttonStyle}
-          onPress={this.openDocumentPicker(this.onResult)}
+          onPress={() => this.openDocumentPicker(this.onResult)}
         >
           <Text style={appStyles.buttonTextStyle}>Open File Picker</Text>
         </TouchableOpacity>
@@ -38,7 +38,9 @@ export default class FilePicker extends Component {
   }
   
   onResult = (error, res) => {
-    this.setState({ filePath: res.fileName });
+    if (res) {
+      this.setState({ filePath: res.fileName });
+    }
   };
 
   onCancel() {}
