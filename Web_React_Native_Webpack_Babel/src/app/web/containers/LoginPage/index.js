@@ -28,6 +28,11 @@ import CloseIcon from '@material-ui/icons/Close';
 
 
 import * as loginActions from '../../../actions/LoginAction';
+import styled from 'styled-components'
+const Container = styled.div`
+    display: flex;
+`;
+
 
 class LoginPage extends Component {
 
@@ -38,15 +43,24 @@ class LoginPage extends Component {
     this.state = {
       email: "",
       password: "",
-      statusMessage: "",
+      statusMessage: "", width: 0, height: 0,
       open: true
     };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
+
   componentDidMount() {
-    console.log('componentDidMount props loginResponse: ', this.props.loginResponse);
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
 
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
 
   handleClose = (event, reason) => {
     if (reason === 'clickaway') {
@@ -96,7 +110,6 @@ class LoginPage extends Component {
         height: '100vh'
       },
       inner: {
-
         marginTop: '15%',
         padding: "20px"
       },
@@ -108,51 +121,52 @@ class LoginPage extends Component {
 
     console.log('************ Rendering login **********************');
     let { loginResponse, isLoggedIn } = this.props;
-    console.log('render props loginResponse: ', loginResponse, isLoggedIn);
+    console.log('render props loginResponse: ', loginResponse, isLoggedIn, window.height);
     return (
-      <div style={style.bg}>
-        <Center>
+
+      <Container style={{ display: 'flex', backgroundColor: "green", height: this.state.height - 10, flexDirection: 'column', }}>
+
+        <Container style={{ display: 'flex', height: 80, backgroundColor: "#A52A2A", flexDirection: 'row', width: "100%", justifyContent: 'flex-end' }}>
           <MuiThemeProvider>
+            <TextField
+              name="email"
+              hintText="Enter your Username"
+              floatingLabelText="Username"
+              onChange={(e) => this.handleChange(e)}
+            />
+            <br />
+            <TextField
+              name="password"
+              type="password"
+              hintText="Enter your Password"
+              floatingLabelText="Password"
+              onChange={(e) => this.handleChange(e)}
+            />
+            <br />
+            <Link to="/home" style={{ textDecoration: 'none' }} >
+              <Button variant="contained" color="primary" style={style} /* onClick={(event) => this.handleSubmit(event)} */ >
+                Login
+              </Button>
+            </Link>
 
-            <div style={style.inner}>
-              <TextField
-                name="email"
-                hintText="Enter your Username"
-                floatingLabelText="Username"
-                onChange={(e) => this.handleChange(e)}
-              />
-              <br />
-              <TextField
-                name="password"
-                type="password"
-                hintText="Enter your Password"
-                floatingLabelText="Password"
-                onChange={(e) => this.handleChange(e)}
-              />
-              <br />
-              <Row>
-                <Link to="/home" style={{ textDecoration: 'none' }} >
-                <Button variant="contained" color="primary" style={style} /* onClick={(event) => this.handleSubmit(event)} */ >
-                  Login
+            <Link to="/forgotPassword">
+              <Button style={style}  >
+                Forgot Password
                 </Button>
-                </Link>
-                <Link to="/signup" style={{ textDecoration: 'none' }} >
-                  <Button variant="contained" color="secondary" style={style} >
-                    Register
-                </Button>
-                </Link>
-              </Row>
-              <Row>
-                <Link to="/forgotPassword">
-                  <Button style={style}  >
-                  Forgot Password
-                </Button>
-                </Link>
-              </Row>
-            </div>
+            </Link>
 
+            <Link to="/signup" style={{ textDecoration: 'none' }} >
+              <Button variant="contained" color="secondary" style={style} >
+                Register
+                </Button>
+            </Link>
           </MuiThemeProvider>
-        </Center>
+        </Container>
+        <Container style={{ display: 'flex', width: '100%', height: "100%", backgroundColor: "white" }}>
+
+         
+        </Container>
+
 
         <Snackbar
           anchorOrigin={{
@@ -178,7 +192,8 @@ class LoginPage extends Component {
             </IconButton>,
           ]}
         />
-      </div >
+      </Container >
+
     );
   }
 }
@@ -201,11 +216,11 @@ function mapDispatchToProps(dispatch) {
 LoginPage.propTypes = {
   loginResponse: PropTypes.any,
   actions: PropTypes.any,
-  doLogin : PropTypes.func,
-  isLoggedIn : PropTypes.bool,
+  doLogin: PropTypes.func,
+  isLoggedIn: PropTypes.bool,
   history: PropTypes.any,
   push: PropTypes.any,
-  message : PropTypes.string,
+  message: PropTypes.string,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);
