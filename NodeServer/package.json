@@ -18,6 +18,6 @@
     "nodemailer": "^4.6.8",
     "pg": "^7.5.0",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^4.39.0"
+    "sequelize": "^5.15.1"
   }
 }
